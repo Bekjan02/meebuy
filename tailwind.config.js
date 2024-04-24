@@ -21,6 +21,10 @@ module.exports = {
       fontFamily: {
         mulish: 'Mulish, sans-serif',
       },
+      screens: {
+        'lg-md': '992px',
+        'full-hd': '1440px',
+      },
       container: {
         center: true,
         padding: {
