@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './mixins.scss';
+@import '../../common/ui/index.scss';
+
+@layer base {
+  html {
+    @apply font-mulish;
+  }
+  input {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .btn-filled {
+    @apply bg-logo-color border-none hover:bg-[#E7E373] ease-in-out duration-300 rounded-lg  text-dark-logo text-base;
+  }
+  .btn-outlined {
+    @apply bg-white  text-dark-logo border border-dark-logo hover:bg-dark-logo hover:text-white ease-in-out duration-300 rounded-lg text-base;
+  }
+}
