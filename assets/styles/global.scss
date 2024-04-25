@@ -2,8 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './mixins.scss';
-@import '../../common/ui/index.scss';
 
 @layer base {
   html {
