@@ -24,8 +24,9 @@ module.exports = {
         poppins: 'Poppins, sans-serif',
       },
       screens: {
-        'lg-md': '992px',
-        'full-hd': '1440px',
+        sm: "640px",
+        "lg-md": "992px",
+        "full-hd": "1440px",
       },
       container: {
         center: true,
