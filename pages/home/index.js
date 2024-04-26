@@ -86,3 +86,18 @@ function changeWord() {
 setInterval(changeWord, 1500);
 
 changingTextElement.style.animation = 'text-in 500ms ease-out';
+
+// slider
+
+const recommendedSlider = new Swiper('.recommended__slider', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+});

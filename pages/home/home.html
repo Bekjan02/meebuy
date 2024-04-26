@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body class="home">
@@ -281,11 +282,64 @@
       </div>
     </section>
     <!-- recommended products -->
-    <section class="recommended__products">
-      <div class="container">
-        <h2 class="section__title">рекомендуемые товары</h2>
+    <section class="recommended__products mt-12 relative">
+      <div class="container relative">
+        <h2 class="section__title text-lg md:text-2xl xl:text-3xl">рекомендуемые товары</h2>
+        <div class="swiper recommended__slider mt-7">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="recommended__slide text-white p-4 cursor-pointer">
+                <div class="slide__content flex flex-col justify-between h-full">
+                  <div>
+                    <span class="text-logo-color sm:text-lg">Оптом</span>
+                    <h2 class="uppercase text-base font-black sm:text-3xl">Мебель</h2>
+                  </div>
+                  <span class="underline text-[#E8E8E8] sm:text-lg">Подробнее</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommended__slide text-white p-4 cursor-pointer">
+                <div class="slide__content flex flex-col justify-between h-full">
+                  <div>
+                    <span class="text-logo-color sm:text-lg">Оптом</span>
+                    <h2 class="uppercase text-base font-black sm:text-3xl">Мебель</h2>
+                  </div>
+                  <span class="underline text-[#E8E8E8] sm:text-lg">Подробнее</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommended__slide text-white p-4 cursor-pointer">
+                <div class="slide__content flex flex-col justify-between h-full">
+                  <div>
+                    <span class="text-logo-color sm:text-lg">Оптом</span>
+                    <h2 class="uppercase text-base font-black sm:text-3xl">Мебель</h2>
+                  </div>
+                  <span class="underline text-[#E8E8E8] sm:text-lg">Подробнее</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="recommended__slide text-white p-4 cursor-pointer">
+                <div class="slide__content flex flex-col justify-between h-full">
+                  <div>
+                    <span class="text-logo-color sm:text-lg">Оптом</span>
+                    <h2 class="uppercase text-base font-black sm:text-3xl">Мебель</h2>
+                  </div>
+                  <span class="underline text-[#E8E8E8] sm:text-lg">Подробнее</span>
+                </div>
+              </div>
+            </div>
+            <!-- more slides -->
+          </div>
+        </div>
+        <div class="swiper-button-next custom-recommended-next">
+        </div>
+        <div class="swiper-button-prev custom-recommended-prev"></div>
       </div>
     </section>
+    <section class="news mt-24"></section>
   </main>
   <footer class="bg-[#222222]">
     <div class="bg-black py-4">
@@ -380,6 +434,7 @@
   </footer>
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./index.js"></script>
 
 </html>
