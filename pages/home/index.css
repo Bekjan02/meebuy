@@ -94,7 +94,7 @@
   background-size: 100%;
 }
 
-/* slider */
+/* recommended products slider */
 .home .recommended__slide {
   background: url(../../assets/images/home/recommended-slider.jpg) center no-repeat;
   background-size: cover;
@@ -122,6 +122,7 @@
 .home .recommended__slide .slide__content {
   position: relative;
 }
+
 .home .recommended__products .custom-recommended-next.swiper-button-next,
 .home .recommended__products .custom-recommended-prev.swiper-button-prev {
   top: 110%;
@@ -145,7 +146,6 @@
   top: 100%;
 }
 
-
 .home .recommended__products .custom-recommended-prev.swiper-button-prev::after {
   content: '';
   background: url(../../assets/images/icons/prev-arrow.svg);
@@ -154,6 +154,62 @@
   top: 100%;
 }
 /* slider end */
+/* new products slider */
+
+.home .new__slide {
+  background: url(../../assets/images/home/new-slider.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  aspect-ratio: 6 / 8;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 452px;
+}
+
+.home .new__slide::before {
+  content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+.home .new__products .custom-new-next.swiper-button-next-new,
+.home .new__products .custom-new-prev.swiper-button-prev-new {
+  top: 110%;
+  width: 36px;
+}
+
+.home .new__products .custom-new-next.swiper-button-next-new {
+  right: 16px;
+}
+
+.home .new__products .custom-new-prev.swiper-button-prev-new {
+  right: 60px;
+  left: unset;
+}
+
+.home .new__products .custom-new-next.swiper-button-next-new::after {
+  content: '';
+  background: url(../../assets/images/icons/next-arrow.svg);
+  width: 36px;
+  height: 36px;
+  top: 100%;
+}
+
+.home .new__products .custom-new-prev.swiper-button-prev-new::after {
+  content: '';
+  background: url(../../assets/images/icons/prev-arrow.svg);
+  width: 36px;
+  height: 36px;
+  top: 100%;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -178,6 +234,14 @@
   }
 
   .home .recommended__products .custom-recommended-prev.swiper-button-prev {
+    right: 130px;
+  }
+
+  .home .new__products .custom-new-next.swiper-button-next-new {
+    right: 80px;
+  }
+
+  .home .new__products .custom-new-prev.swiper-button-prev-new {
     right: 130px;
   }
 }
