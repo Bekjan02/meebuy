@@ -24,6 +24,7 @@ module.exports = {
         poppins: "Poppins",
       },
       screens: {
+        sm: "640px",
         "lg-md": "992px",
         "full-hd": "1440px",
       },
