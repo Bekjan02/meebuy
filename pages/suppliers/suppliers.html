@@ -273,33 +273,44 @@
 
     <div class="bg-[#FFFFFC] py-16">
       <div class="container">
-        <h6 class="text-start text-xl font-semibold uppercase font-mulish">
+        <h6
+          class="text-start lg-md:text-xl font-semibold uppercase font-mulish"
+        >
           ознакомьтесь со всеми рекомендуемыми и новыми поставщиками
         </h6>
-        <div class="flex justify-between md:my-10 md: mb-5">
+        <div
+          class="flex justify-between items-center md:my-10 md: mb-5 lg-md: mt-10"
+        >
           <ul
-            class="cards flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] p-0 m-0 h-[44px]"
+            class="cards suppliers flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] h-[44px]"
           >
             <li
-              class="font-semibold text-sm capitalize py-3 px-6 font-mulish active:bg-[#FFFB98] focus:bg-[#FFFB98] hover:bg-[#FFFB98] text-center rounded-[15px]"
+              class="flex items-center gap-2 font-semibold active text-sm capitalize py-3 px-6 font-mulish active:bg-[#FFFB98] focus:bg-[#FFFB98] hover:bg-[#FFFB98] text-center rounded-[15px]"
             >
               все
+              <img
+                class="lg-md:hidden block"
+                src="../../assets/images/suppliers/suppliers/icons/arrow-down.svg"
+                alt=""
+              />
             </li>
-            <li
-              class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
-            >
-              поставщики
-            </li>
-            <li
-              class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
-            >
-              производители
-            </li>
-            <li
-              class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
-            >
-              логистика
-            </li>
+            <div class="lg-md:flex hidden">
+              <li
+                class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
+              >
+                поставщики
+              </li>
+              <li
+                class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
+              >
+                производители
+              </li>
+              <li
+                class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
+              >
+                логистика
+              </li>
+            </div>
           </ul>
 
           <div class="flex gap-5">
@@ -313,7 +324,7 @@
               />
             </div>
             <div
-              class="cards flex gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
+              class="cards lg-md:flex hidden gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
             >
               Рекомендуем
               <a class="toggle-icon" id="toggleLink">
@@ -331,9 +342,11 @@
         </div>
         <div class="flex flex-col gap-7">
           <div
-            class="cards flex justify-between items-start p-[20px] rounded-[15px]"
+            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
           >
-            <div class="flex gap-7 items-center">
+            <div
+              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            >
               <img
                 src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
                 alt=""
@@ -357,7 +370,7 @@
                 </div>
               </div>
             </div>
-            <ul class="flex gap-2">
+            <ul class="flex gap-2 sm: absolute right-4">
               <li>
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
@@ -379,9 +392,11 @@
             </ul>
           </div>
           <div
-            class="cards flex justify-between items-start p-[20px] rounded-[15px]"
+            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
           >
-            <div class="flex gap-7 items-center">
+            <div
+              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            >
               <img
                 src="../../assets/images/suppliers/suppliers/img/white-ear-phone.png"
                 alt=""
@@ -405,7 +420,7 @@
                 </div>
               </div>
             </div>
-            <ul class="flex gap-2">
+            <ul class="flex gap-2 sm: absolute right-4">
               <li>
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
@@ -427,9 +442,11 @@
             </ul>
           </div>
           <div
-            class="cards flex justify-between items-start p-[20px] rounded-[15px]"
+            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
           >
-            <div class="flex gap-7 items-center">
+            <div
+              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            >
               <img
                 src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
                 alt=""
@@ -453,7 +470,7 @@
                 </div>
               </div>
             </div>
-            <ul class="flex gap-2">
+            <ul class="flex gap-2 sm: absolute right-4">
               <li>
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
@@ -476,31 +493,34 @@
           </div>
         </div>
         <div
-          class="cards flex justify-center items-center bg-[#F6F6F6] my-7 rounded-[15px]"
+          class="cards flex lg-md:flex-row flex-col justify-center items-center bg-[#F6F6F6] my-7 rounded-[15px]"
         >
           <img
             src="../../assets/images/suppliers/suppliers/img/res-cross.png"
             alt=""
           />
-          <div class="flex flex-col gap-20 justify-between">
+          <div class="flex flex-col gap-20 justify-between lg-md: mb-10">
             <div>
-              <h5 class="text-[#934655] text-[34px] font-black">
+              <h5 class="text-[#934655] md:text-[34px] text-[20px] font-black">
                 Nike Air Max 90 Futura
               </h5>
               <p class="font-mulish text-[#2B292C]">
                 Оригинальные кроссовки Nike Air Max 90 Futura
               </p>
             </div>
-            <div class="flex gap-1">
+            <div class="flex md: justify-center gap-1">
               <img
+                class="max-w-[106px]"
                 src="../../assets/images/suppliers/suppliers/img/pink-cross.png"
                 alt=""
               />
               <img
+                class="max-w-[106px]"
                 src="../../assets/images/suppliers/suppliers/img/white-croos.png"
                 alt=""
               />
               <img
+                class="max-w-[106px]"
                 src="../../assets/images/suppliers/suppliers/img/hakki-cross.png"
                 alt=""
               />
@@ -509,9 +529,61 @@
         </div>
         <div class="flex flex-col gap-7">
           <div
-            class="cards flex justify-between items-start p-[20px] rounded-[15px]"
+            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
           >
-            <div class="flex gap-7 items-center">
+            <div
+              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            >
+              <img
+                src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
+                alt=""
+              />
+              <div class="flex flex-col gap-6">
+                <div>
+                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
+                    Headphones.kg
+                  </h6>
+                  <p>Наушники и другие аксессуары для гаджетов</p>
+                </div>
+                <div class="flex gap-4">
+                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
+                    Подробнее
+                  </button>
+                  <button
+                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
+                  >
+                    Написать
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="flex gap-2 sm: absolute right-4">
+              <li>
+                <img
+                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div
+            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+          >
+            <div
+              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            >
               <img
                 src="../../assets/images/suppliers/suppliers/img/white-ear-phone.png"
                 alt=""
@@ -535,7 +607,7 @@
                 </div>
               </div>
             </div>
-            <ul class="flex gap-2">
+            <ul class="flex gap-2 sm: absolute right-4">
               <li>
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
@@ -557,9 +629,11 @@
             </ul>
           </div>
           <div
-            class="cards flex justify-between items-start p-[20px] rounded-[15px]"
+            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
           >
-            <div class="flex gap-7 items-center">
+            <div
+              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            >
               <img
                 src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
                 alt=""
@@ -583,55 +657,7 @@
                 </div>
               </div>
             </div>
-            <ul class="flex gap-2">
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
-                  alt=""
-                />
-              </li>
-            </ul>
-          </div>
-          <div
-            class="cards flex justify-between items-start p-[20px] rounded-[15px]"
-          >
-            <div class="flex gap-7 items-center">
-              <img
-                src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2">
+            <ul class="flex gap-2 sm: absolute right-4">
               <li>
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
@@ -654,31 +680,34 @@
           </div>
         </div>
         <div
-          class="cards flex justify-center items-center bg-[#F6F6F6] my-7 rounded-[15px]"
+          class="cards flex lg-md:flex-row flex-col justify-center items-center bg-[#F6F6F6] my-7 rounded-[15px]"
         >
           <img
             src="../../assets/images/suppliers/suppliers/img/res-cross.png"
             alt=""
           />
-          <div class="flex flex-col gap-20 justify-between">
+          <div class="flex flex-col gap-20 justify-between lg-md: mb-10">
             <div>
-              <h5 class="text-[#934655] text-[34px] font-black">
+              <h5 class="text-[#934655] md:text-[34px] text-[20px] font-black">
                 Nike Air Max 90 Futura
               </h5>
               <p class="font-mulish text-[#2B292C]">
                 Оригинальные кроссовки Nike Air Max 90 Futura
               </p>
             </div>
-            <div class="flex gap-1">
+            <div class="flex md: justify-center gap-1">
               <img
+                class="max-w-[106px]"
                 src="../../assets/images/suppliers/suppliers/img/pink-cross.png"
                 alt=""
               />
               <img
+                class="max-w-[106px]"
                 src="../../assets/images/suppliers/suppliers/img/white-croos.png"
                 alt=""
               />
               <img
+                class="max-w-[106px]"
                 src="../../assets/images/suppliers/suppliers/img/hakki-cross.png"
                 alt=""
               />
@@ -688,7 +717,7 @@
 
         <!-- pagination -->
 
-        <div class="flex justify-between items-center">
+        <div class="lg-md:flex hidden justify-between items-center">
           <div class="flex items-center gap-5">
             <div class="flex items-center gap-2">
               <img
