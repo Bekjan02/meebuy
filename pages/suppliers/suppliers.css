@@ -123,17 +123,14 @@
   text-decoration: none;
   border-radius: 3px;
 }
-/* Hover effect */
 .pagination li a:hover {
   background-color: #f0f0f0;
 }
-/* Active state */
 .pagination li.active a {
   background-color: #e4db00;
   color: #4d4d4d;
   border-color: #e4db00;
 }
-/* Ellipsis style */
 .pagination .ellipsis {
   pointer-events: none;
   display: flex;
