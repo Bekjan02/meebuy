@@ -31,7 +31,7 @@
           </form>
           <ul class="hidden lg-md:flex text-white justify-center items-center gap-5 text-sm">
             <li class="font-medium uppercase">
-              <a> Поставщики </a>
+              <a href="/pages/suppliers/suppliers.html"> Поставщики </a>
             </li>
             <li class="font-medium uppercase">
               <a> Закупки </a>
@@ -86,7 +86,7 @@
         <div class="text-white">
           <ul class="flex flex-col justify-center items-center h-full gap-12">
             <li class="text-base font-medium uppercase">
-              <a> Поставщики </a>
+              <a href="/pages/suppliers/suppliers.html"> Поставщики </a>
             </li>
             <li class="text-base font-medium uppercase">
               <a> Закупки </a>
@@ -154,10 +154,12 @@
     <section class="business__segments my-[70px] sm:my-20 lg:my-[105px]">
       <div class="container">
         <div class="grid grid-cols-2 gap-4 lg-md:grid-cols-4">
-          <div class="activities suppliers">
-            <img class="absolute top-0 left-0" src="../../assets/images/home/suppliers.jpg" alt="">
-            <h2 class="text-xl font-bold text-white relative z-[1]">Поставщики</h2>
-          </div>
+          <a href="/pages/suppliers/suppliers.html">
+            <div class="activities suppliers">
+              <img class="absolute top-0 left-0" src="../../assets/images/home/suppliers.jpg" alt="">
+              <h2 class="text-xl font-bold text-white relative z-[1]">Поставщики</h2>
+            </div>
+          </a>
           <div class="activities purchases">
             <img class="absolute top-0 left-0" src="../../assets/images/home/purchases.jpg" alt="">
             <h2 class="text-xl font-bold text-white relative z-[1]">Закупки</h2>
@@ -494,7 +496,9 @@
               </div>
               <div class="flex mt-4 gap-4 max-w-[282px]">
                 <button class="flex-grow btn-filled py-[7px]">
-                  Подробнее
+                  <a href="/pages/supplierDetail/index.html">
+                    Подробнее
+                  </a>
                 </button>
                 <button class="flex-grow btn-outlined py-[7px]">
                   Написать
@@ -821,7 +825,7 @@
         </form>
         <ul class="hidden lg-md:flex text-white justify-center items-center gap-5 text-sm">
           <li class="font-medium uppercase">
-            <a> Поставщики </a>
+            <a href="/pages/suppliers/suppliers.html"> Поставщики </a>
           </li>
           <li class="font-medium uppercase">
             <a> Закупки </a>
@@ -879,7 +883,10 @@
             <h6 class="text-[#FFFFFC]">покупателям</h6>
           </li>
           <li>Купить оптом</li>
-          <li>Поставщики</li>
+          <li><a href="/pages/suppliers/suppliers.html">
+              Поставщики
+            </a>
+          </li>
           <li>Производители</li>
           <li>Поиск товаров</li>
         </ul>
