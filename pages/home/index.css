@@ -196,6 +196,10 @@
 }
 
 
+.home .card {
+  box-shadow: #b1b1b14d 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
 @media screen and (min-width: 992px) {
   .home .hero {
       height: calc(100vh - 70px);

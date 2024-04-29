@@ -11,6 +11,8 @@ const heroSearchIconImg = document.querySelector('#heroSearchIconImg');
 const heroFormBtn = document.querySelector('#heroFormBtn');
 // hero title
 const heroTitle = document.querySelector('#heroTitle');
+// heart
+const heart = document.querySelector('#heart');
 
 const toggleMenu = () => {
   if (burgerMenu.classList.contains('translate-x-0')) {
@@ -116,3 +118,11 @@ const newSlide = new Swiper('.new__slider', {
     },
   },
 });
+
+// heart
+
+const toggleActive = () => {
+  heart.classList.toggle('text-logo-color');
+};
+
+heart.addEventListener('click', toggleActive);
