@@ -24,9 +24,9 @@ module.exports = {
         poppins: 'Poppins, sans-serif',
       },
       screens: {
-        sm: "640px",
-        "lg-md": "992px",
-        "full-hd": "1440px",
+        sm: '640px',
+        'lg-md': '992px',
+        'full-hd': '1440px',
       },
       container: {
         center: true,
@@ -34,6 +34,10 @@ module.exports = {
           DEFAULT: '1rem',
           'full-hd': '5rem',
         },
+      },
+      boxShadow: {
+        'card-shadow':
+          '#b1b1b14d 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em',
       },
     },
   },
