@@ -2531,6 +2531,11 @@ input{
      object-fit: scale-down;
 }
 
+.object-top{
+  -o-object-position: top;
+     object-position: top;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2553,6 +2558,10 @@ input{
 
 .p-\[1px\]{
   padding: 1px;
+}
+
+.p-2\.5{
+  padding: 0.625rem;
 }
 
 .px-2{
@@ -3792,12 +3801,20 @@ input{
     margin-top: 2.25rem;
   }
 
+  .lg\:mt-\[70px\]{
+    margin-top: 70px;
+  }
+
   .lg\:aspect-square{
     aspect-ratio: 1 / 1;
   }
 
   .lg\:gap-\[30px\]{
     gap: 30px;
+  }
+
+  .lg\:gap-5{
+    gap: 1.25rem;
   }
 
   .lg\:p-5{
