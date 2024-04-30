@@ -6,7 +6,6 @@
     <title>Procurement</title>
 
     <link rel="stylesheet" href="../../styles.css" />
-    <link href="../../output.css" rel="stylesheet" />
     <link href="./procurement.css" rel="stylesheet" />
   </head>
   <body>
@@ -89,10 +88,7 @@
         <div class="menu">
           <div class="container flex gap-4 py-4">
             <img src="../../assets/images/icons/home.svg" alt="home" />
-            <img
-              src="../../assets/images/icons/arrow-prev.svg"
-              alt=""
-            />
+            <img src="../../assets/images/icons/arrow-prev.svg" alt="" />
             <p class="font-normal font-mulish text-[#A0A0A0]">закупки</p>
           </div>
         </div>
@@ -126,229 +122,270 @@
       </div>
     </div>
 
-    <!-- pre -->
+    <!-- procurement -->
 
-    <div class="bg-[#FFFFFC] py-16">
+    <div class="bg-[#FFFFFC] pb-16">
       <div class="container">
-        <h6
-          class="text-start lg-md:text-xl font-semibold uppercase font-mulish"
-        >
-          ознакомьтесь со всеми рекомендуемыми и новыми поставщиками
-        </h6>
         <div
-          class="flex justify-between items-center md:my-10 md: mb-5 lg-md: mt-10"
+          class="relative flex gap-6 lg-md: items-center md:my-10 md: mb-5 lg-md: mt-10"
         >
-          <ul
-            class="cards suppliers flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] h-[44px]"
+          <div
+            class="cards flex gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
           >
-            <li
-              class="flex items-center gap-2 font-semibold active text-sm capitalize py-3 px-6 font-mulish active:bg-[#FFFB98] focus:bg-[#FFFB98] hover:bg-[#FFFB98] text-center rounded-[15px]"
-            >
-              все
+            Фильтр
+            <img
+              src="../../assets/images/suppliers/suppliers/icons/filter.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="cards flex gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
+            id="selectContainer"
+          >
+            Рекомендуем
+            <a class="toggle-icon" id="toggleLink">
               <img
-                class="lg-md:hidden block"
                 src="../../assets/images/suppliers/suppliers/icons/arrow-down.svg"
-                alt=""
+                alt="Open"
+                class="openIcon"
+                style="display: block"
               />
-            </li>
-            <div class="lg-md:flex hidden">
-              <li
-                class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
-              >
-                поставщики
-              </li>
-              <li
-                class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
-              >
-                производители
-              </li>
-              <li
-                class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
-              >
-                логистика
-              </li>
-            </div>
-          </ul>
-
-          <div class="flex gap-5">
-            <div
-              class="cards flex gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
-            >
-              Фильтр
               <img
-                src="../../assets/images/suppliers/suppliers/icons/filter.svg"
-                alt=""
+                src="../../assets/images/suppliers/suppliers/icons/arrow-up.svg"
+                alt="Close"
+                class="closeIcon"
+                style="display: none"
               />
-            </div>
-            <div
-              class="cards lg-md:flex hidden gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
-            >
-              Рекомендуем
-              <a class="toggle-icon" id="toggleLink">
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/arrow-down.svg"
-                  alt=""
-                />
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/arrow-up.svg"
-                  alt=""
-                />
-              </a>
-            </div>
+            </a>
+          </div>
+          <!-- select -->
+
+          <div
+            id="selectModal"
+            class="modal absolute top-16 bottom-0 left-6"
+            style="display: none"
+          >
+            select will be after finishing design
           </div>
         </div>
+
         <div class="flex flex-col gap-7">
           <div
-            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+            style="background-color: #ebebeb"
+            class="cardCont cards lg-md:relative flex flex-col items-start lg-md:px-16 px-4 lg-md:py-10 py-7 rounded-[15px]"
           >
-            <div
-              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            <ul
+              class="flex items-center gap-2 lg-md:absolute lg-md:right-9 lg-md: mb-5"
             >
-              <img
-                src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2 sm: absolute right-4">
               <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
+                <span
+                  class="text-[#E4DB00] text-[12px] font-normal font-mulish rounded-[51px] bg-[#2B292C] py-2 px-4"
+                  >Новое</span
+                >
+              </li>
+              <li>
+                <img src="../../assets/images/icons/email.svg" alt="" />
+              </li>
+              <li>
+                <img src="../../assets/images/icons/call.svg" alt="" />
               </li>
               <li>
                 <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  class="text-red-600 overflow-hidden heart-icon"
+                  src="../../assets/images/icons/like.svg"
+                  id="burgerIcon"
                   alt=""
                 />
               </li>
             </ul>
+            <div class="flex flex-col gap-5 items-start">
+              <h6
+                class="text-[#2B292C] text-[18px] font-mulish font-extrabold line-clamp-2"
+              >
+                Керамические, глиняные кружки Керамические, глиняные кружки
+              </h6>
+              <div class="flex flex-col gap-2 font-light">
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Количество:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >от 100 шт.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Бюджет:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >50 000 сом.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Объем:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >мелкий опт</span
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-[#E4DB00] text-[16px] font-normal rounded-lg py-3 px-6"
+              >
+                Подробнее
+              </button>
+            </div>
+            <p
+              class="text-[#686868] text-[16px] font-mulish font-normal absolute right-9 bottom-8"
+            >
+              27.11.2023
+            </p>
           </div>
           <div
-            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+            style="background-color: #ebebeb"
+            class="cardCont cards lg-md:relative flex flex-col items-start lg-md:px-16 px-4 lg-md:py-10 py-7 rounded-[15px]"
           >
-            <div
-              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            <ul
+              class="flex items-center gap-2 lg-md:absolute lg-md:right-9 lg-md: mb-5"
             >
-              <img
-                src="../../assets/images/suppliers/suppliers/img/white-ear-phone.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2 sm: absolute right-4">
               <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
+                <span
+                  class="text-[#E4DB00] text-[12px] font-normal font-mulish rounded-[51px] bg-[#2B292C] py-2 px-4"
+                  >Новое</span
+                >
+              </li>
+              <li>
+                <img src="../../assets/images/icons/email.svg" alt="" />
+              </li>
+              <li>
+                <img src="../../assets/images/icons/call.svg" alt="" />
               </li>
               <li>
                 <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  src="../../assets/images/icons/like.svg"
+                  id="burgerIcon"
                   alt=""
                 />
               </li>
             </ul>
+            <div class="flex flex-col gap-5 items-start">
+              <h6
+                class="text-[#2B292C] text-[18px] font-mulish font-extrabold line-clamp-2"
+              >
+                Керамические, глиняные кружки Керамические, глиняные кружки
+              </h6>
+              <div class="flex flex-col gap-2 font-light">
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Количество:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >от 100 шт.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Бюджет:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >50 000 сом.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Объем:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >мелкий опт</span
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-[#E4DB00] text-[16px] font-normal rounded-lg py-3 px-6"
+              >
+                Подробнее
+              </button>
+            </div>
+            <p
+              class="text-[#686868] text-[16px] font-mulish font-normal absolute right-9 bottom-8"
+            >
+              27.11.2023
+            </p>
           </div>
           <div
-            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+            style="background-color: #ebebeb"
+            class="cardCont cards lg-md:relative flex flex-col items-start lg-md:px-16 px-4 lg-md:py-10 py-7 rounded-[15px]"
           >
-            <div
-              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            <ul
+              class="flex items-center gap-2 lg-md:absolute lg-md:right-9 lg-md: mb-5"
             >
-              <img
-                src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2 sm: absolute right-4">
               <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
+                <span
+                  class="text-[#E4DB00] text-[12px] font-normal font-mulish rounded-[51px] bg-[#2B292C] py-2 px-4"
+                  >Новое</span
+                >
+              </li>
+              <li>
+                <img src="../../assets/images/icons/email.svg" alt="" />
+              </li>
+              <li>
+                <img src="../../assets/images/icons/call.svg" alt="" />
               </li>
               <li>
                 <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  src="../../assets/images/icons/like.svg"
+                  id="burgerIcon"
                   alt=""
                 />
               </li>
             </ul>
+            <div class="flex flex-col gap-5 items-start">
+              <h6
+                class="text-[#2B292C] text-[18px] font-mulish font-extrabold line-clamp-2"
+              >
+                Керамические, глиняные кружки Керамические, глиняные кружки
+              </h6>
+              <div class="flex flex-col gap-2 font-light">
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Количество:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >от 100 шт.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Бюджет:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >50 000 сом.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Объем:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >мелкий опт</span
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-[#E4DB00] text-[16px] font-normal rounded-lg py-3 px-6"
+              >
+                Подробнее
+              </button>
+            </div>
+            <p
+              class="text-[#686868] text-[16px] font-mulish font-normal absolute right-9 bottom-8"
+            >
+              27.11.2023
+            </p>
           </div>
         </div>
+        <!--  -->
         <div
           class="cards flex md:flex-row flex-col justify-center items-center bg-[#F6F6F6] my-7 rounded-[15px]"
         >
@@ -386,154 +423,217 @@
         </div>
         <div class="flex flex-col gap-7">
           <div
-            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+            style="background-color: #ebebeb"
+            class="cardCont cards lg-md:relative flex flex-col items-start lg-md:px-16 px-4 lg-md:py-10 py-7 rounded-[15px]"
           >
-            <div
-              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            <ul
+              class="flex items-center gap-2 lg-md:absolute lg-md:right-9 lg-md: mb-5"
             >
-              <img
-                src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2 sm: absolute right-4">
               <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
+                <span
+                  class="text-[#E4DB00] text-[12px] font-normal font-mulish rounded-[51px] bg-[#2B292C] py-2 px-4"
+                  >Новое</span
+                >
+              </li>
+              <li>
+                <img src="../../assets/images/icons/email.svg" alt="" />
+              </li>
+              <li>
+                <img src="../../assets/images/icons/call.svg" alt="" />
               </li>
               <li>
                 <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  src="../../assets/images/icons/like.svg"
+                  id="burgerIcon"
                   alt=""
                 />
               </li>
             </ul>
+            <div class="flex flex-col gap-5 items-start">
+              <h6
+                class="text-[#2B292C] text-[18px] font-mulish font-extrabold line-clamp-2"
+              >
+                Керамические, глиняные кружки Керамические, глиняные кружки
+              </h6>
+              <div class="flex flex-col gap-2 font-light">
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Количество:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >от 100 шт.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Бюджет:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >50 000 сом.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Объем:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >мелкий опт</span
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-[#E4DB00] text-[16px] font-normal rounded-lg py-3 px-6"
+              >
+                Подробнее
+              </button>
+            </div>
+            <p
+              class="text-[#686868] text-[16px] font-mulish font-normal absolute right-9 bottom-8"
+            >
+              27.11.2023
+            </p>
           </div>
           <div
-            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+            style="background-color: #ebebeb"
+            class="cardCont cards lg-md:relative flex flex-col items-start lg-md:px-16 px-4 lg-md:py-10 py-7 rounded-[15px]"
           >
-            <div
-              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            <ul
+              class="flex items-center gap-2 lg-md:absolute lg-md:right-9 lg-md: mb-5"
             >
-              <img
-                src="../../assets/images/suppliers/suppliers/img/white-ear-phone.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2 sm: absolute right-4">
               <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
+                <span
+                  class="text-[#E4DB00] text-[12px] font-normal font-mulish rounded-[51px] bg-[#2B292C] py-2 px-4"
+                  >Новое</span
+                >
+              </li>
+              <li>
+                <img src="../../assets/images/icons/email.svg" alt="" />
+              </li>
+              <li>
+                <img src="../../assets/images/icons/call.svg" alt="" />
               </li>
               <li>
                 <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  src="../../assets/images/icons/like.svg"
+                  id="burgerIcon"
                   alt=""
                 />
               </li>
             </ul>
+            <div class="flex flex-col gap-5 items-start">
+              <h6
+                class="text-[#2B292C] text-[18px] font-mulish font-extrabold line-clamp-2"
+              >
+                Керамические, глиняные кружки Керамические, глиняные кружки
+              </h6>
+              <div class="flex flex-col gap-2 font-light">
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Количество:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >от 100 шт.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Бюджет:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >50 000 сом.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Объем:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >мелкий опт</span
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-[#E4DB00] text-[16px] font-normal rounded-lg py-3 px-6"
+              >
+                Подробнее
+              </button>
+            </div>
+            <p
+              class="text-[#686868] text-[16px] font-mulish font-normal absolute right-9 bottom-8"
+            >
+              27.11.2023
+            </p>
           </div>
           <div
-            class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"
+            style="background-color: #ebebeb"
+            class="cardCont cards lg-md:relative flex flex-col items-start lg-md:px-16 px-4 lg-md:py-10 py-7 rounded-[15px]"
           >
-            <div
-              class="flex md:flex-row flex-col gap-7 md:items-center items-start"
+            <ul
+              class="flex items-center gap-2 lg-md:absolute lg-md:right-9 lg-md: mb-5"
             >
-              <img
-                src="../../assets/images/suppliers/suppliers/img/bg-orange-ear-ph.png"
-                alt=""
-              />
-              <div class="flex flex-col gap-6">
-                <div>
-                  <h6 class="pb-2 text-[18px] font-extrabold font-mulish">
-                    Headphones.kg
-                  </h6>
-                  <p>Наушники и другие аксессуары для гаджетов</p>
-                </div>
-                <div class="flex gap-4">
-                  <button class="bg-[#E4DB00] px-6 py-3 rounded-[7px]">
-                    Подробнее
-                  </button>
-                  <button
-                    class="border border-solid border-[#2B292C] px-6 py-3 rounded-[7px]"
-                  >
-                    Написать
-                  </button>
-                </div>
-              </div>
-            </div>
-            <ul class="flex gap-2 sm: absolute right-4">
               <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/diamand.svg"
-                  alt=""
-                />
+                <span
+                  class="text-[#E4DB00] text-[12px] font-normal font-mulish rounded-[51px] bg-[#2B292C] py-2 px-4"
+                  >Новое</span
+                >
+              </li>
+              <li>
+                <img src="../../assets/images/icons/email.svg" alt="" />
+              </li>
+              <li>
+                <img src="../../assets/images/icons/call.svg" alt="" />
               </li>
               <li>
                 <img
-                  src="../../assets/images/suppliers/suppliers/icons/check.svg"
-                  alt=""
-                />
-              </li>
-              <li>
-                <img
-                  src="../../assets/images/suppliers/suppliers/icons/cruiz.svg"
+                  src="../../assets/images/icons/like.svg"
+                  id="burgerIcon"
                   alt=""
                 />
               </li>
             </ul>
+            <div class="flex flex-col gap-5 items-start">
+              <h6
+                class="text-[#2B292C] text-[18px] font-mulish font-extrabold line-clamp-2"
+              >
+                Керамические, глиняные кружки Керамические, глиняные кружки
+              </h6>
+              <div class="flex flex-col gap-2 font-light">
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Количество:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >от 100 шт.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Бюджет:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >50 000 сом.</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <p class="text-[#686868] text-[16px] font-mulish font-normal">
+                    Объем:
+                  </p>
+                  <span class="text-[#2B292C] text-[16px] font-normal"
+                    >мелкий опт</span
+                  >
+                </div>
+              </div>
+              <button
+                class="bg-[#E4DB00] text-[16px] font-normal rounded-lg py-3 px-6"
+              >
+                Подробнее
+              </button>
+            </div>
+            <p
+              class="text-[#686868] text-[16px] font-mulish font-normal absolute right-9 bottom-8"
+            >
+              27.11.2023
+            </p>
           </div>
         </div>
         <div
@@ -580,28 +680,30 @@
               <img
                 src="../../assets/images/suppliers/suppliers/icons/prev.svg"
                 alt=""
+                id="prevPagee"
               />
-              <p>Назад</p>
+              <p id="prevPage" class="cursor-pointer">Назад</p>
             </div>
-            <ul class="pagination">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li class="active"><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+            <ul class="pagination" id="pagination">
+              <li class="page"><a href="#">1</a></li>
+              <li class="page"><a href="#">2</a></li>
+              <li class="page"><a href="#">3</a></li>
+              <li class="page"><a href="#">4</a></li>
+              <li class="page"><a href="#">5</a></li>
               <li class="ellipsis">...</li>
-              <li><a href="#">6</a></li>
-              <li><a href="#">7</a></li>
-              <li><a href="#">8</a></li>
-              <li><a href="#">9</a></li>
-              <li><a href="#">10</a></li>
+              <li class="page"><a href="#">6</a></li>
+              <li class="page active"><a href="#">7</a></li>
+              <li class="page"><a href="#">8</a></li>
+              <li class="page"><a href="#">9</a></li>
+              <li class="page"><a href="#">10</a></li>
               <li class="ellipsis">...</li>
             </ul>
             <div class="flex items-center gap-2">
-              <p>Вперед</p>
+              <p id="nextPage" class="cursor-pointer">Вперед</p>
               <img
                 src="../../assets/images/suppliers/suppliers/icons/next.svg"
                 alt=""
+                id="nextPagee"
               />
             </div>
           </div>
@@ -609,7 +711,7 @@
             <p>Перейти на страницу</p>
             <input
               type="text"
-              class="border border-[#A0A0A0] rounded-[5px] w-[89px] h-10"
+              class="border border-[#A0A0A0] rounded-[5px] w-[89px] h-10 pl-4"
             />
             <img
               class="bg-[#FFFCB7] p-2 rounded-[5px]"
@@ -757,5 +859,6 @@
         </div>
       </div>
     </footer>
+    <script src="./procurement.js"></script>
   </body>
 </html>

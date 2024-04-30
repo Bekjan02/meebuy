@@ -313,7 +313,7 @@
             </div>
           </ul>
 
-          <div class="flex gap-5">
+          <div class="flex gap-5 relative">
             <div
               class="cards flex gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
             >
@@ -324,19 +324,32 @@
               />
             </div>
             <div
-              class="cards lg-md:flex hidden gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
+              class="cards flex gap-2 items-center shadow shadow-[#B1B1B14D] rounded-[15px] py-3 px-6"
+              id="selectContainer"
             >
               Рекомендуем
               <a class="toggle-icon" id="toggleLink">
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/arrow-down.svg"
-                  alt=""
+                  alt="Open"
+                  class="openIcon"
+                  style="display: block"
                 />
                 <img
                   src="../../assets/images/suppliers/suppliers/icons/arrow-up.svg"
-                  alt=""
+                  alt="Close"
+                  class="closeIcon"
+                  style="display: none"
                 />
               </a>
+            </div>
+            <!-- select -->
+            <div
+              id="selectModal"
+              class="modal absolute top-16 bottom-0 left-6"
+              style="display: none"
+            >
+              select will be after finishing design
             </div>
           </div>
         </div>
@@ -723,28 +736,30 @@
               <img
                 src="../../assets/images/suppliers/suppliers/icons/prev.svg"
                 alt=""
+                id="prevPagee"
               />
-              <p>Назад</p>
+              <p id="prevPage" class="cursor-pointer">Назад</p>
             </div>
-            <ul class="pagination">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li class="active"><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+            <ul class="pagination" id="pagination">
+              <li class="page"><a href="#">1</a></li>
+              <li class="page"><a href="#">2</a></li>
+              <li class="page"><a href="#">3</a></li>
+              <li class="page"><a href="#">4</a></li>
+              <li class="page"><a href="#">5</a></li>
               <li class="ellipsis">...</li>
-              <li><a href="#">6</a></li>
-              <li><a href="#">7</a></li>
-              <li><a href="#">8</a></li>
-              <li><a href="#">9</a></li>
-              <li><a href="#">10</a></li>
+              <li class="page"><a href="#">6</a></li>
+              <li class="page active"><a href="#">7</a></li>
+              <li class="page"><a href="#">8</a></li>
+              <li class="page"><a href="#">9</a></li>
+              <li class="page"><a href="#">10</a></li>
               <li class="ellipsis">...</li>
             </ul>
             <div class="flex items-center gap-2">
-              <p>Вперед</p>
+              <p id="nextPage" class="cursor-pointer">Вперед</p>
               <img
                 src="../../assets/images/suppliers/suppliers/icons/next.svg"
                 alt=""
+                id="nextPagee"
               />
             </div>
           </div>
@@ -752,7 +767,7 @@
             <p>Перейти на страницу</p>
             <input
               type="text"
-              class="border border-[#A0A0A0] rounded-[5px] w-[89px] h-10"
+              class="border border-[#A0A0A0] rounded-[5px] w-[89px] h-10 pl-4"
             />
             <img
               class="bg-[#FFFCB7] p-2 rounded-[5px]"
@@ -900,5 +915,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../procurement/procurement.js"></script>
   </body>
 </html>
