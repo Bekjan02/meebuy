@@ -38,9 +38,6 @@ const closeIcon = document.querySelector("#closeIcon");
 const searchForm = document.querySelector("#searchForm");
 const searchIcon = document.querySelector("#searchIconImg");
 
-const heart = document.querySelector("#heart2");
-const heart1 = document.querySelector("#heart1");
-
 const toggleMenu = () => {
   if (burgerMenu.classList.contains("translate-x-0")) {
     burgerMenu.classList.remove("translate-x-0");
@@ -82,10 +79,11 @@ const slider = new Swiper(".swiper2", {
   },
 });
 
-const toggleActive = () => {
-  heart.classList.toggle("text-logo-color");
-  heart1.classList.toggle("text-logo-color");
-};
+const hearts = document.querySelectorAll(".heart");
+hearts.forEach((heart) => {
+  heart.addEventListener("click", toggleActiveHeart);
+});
 
-heart.addEventListener("click", toggleActive);
-heart1.addEventListener("click", toggleActive);
+function toggleActiveHeart(event) {
+  event.currentTarget.classList.toggle("text-logo-color");
+}
