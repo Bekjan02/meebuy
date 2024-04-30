@@ -8,7 +8,6 @@
   justify-content: flex-start;
 }
 
-
 .home .hero::before {
   content: '';
 	display: block;
@@ -127,7 +126,7 @@
 
 .home .recommended__products .custom-recommended-next.swiper-button-next::after {
   content: '';
-  background: url(../../assets/images/icons/next-arrow.svg);
+  background: url(../../assets/images/icons/next-arrow-bordered.svg);
   width: 36px;
   height: 36px;
   top: 100%;
@@ -135,7 +134,7 @@
 
 .home .recommended__products .custom-recommended-prev.swiper-button-prev::after {
   content: '';
-  background: url(../../assets/images/icons/prev-arrow.svg);
+  background: url(../../assets/images/icons/prev-arrow-bordered.svg);
   width: 36px;
   height: 36px;
   top: 100%;
@@ -181,7 +180,7 @@
 
 .home .new__products .custom-new-next.swiper-button-next-new::after {
   content: '';
-  background: url(../../assets/images/icons/next-arrow.svg);
+  background: url(../../assets/images/icons/next-arrow-bordered.svg);
   width: 36px;
   height: 36px;
   top: 100%;
@@ -189,7 +188,7 @@
 
 .home .new__products .custom-new-prev.swiper-button-prev-new::after {
   content: '';
-  background: url(../../assets/images/icons/prev-arrow.svg);
+  background: url(../../assets/images/icons/prev-arrow-bordered.svg);
   width: 36px;
   height: 36px;
   top: 100%;
