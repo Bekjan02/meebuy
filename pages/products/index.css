@@ -1,8 +1,3 @@
-.products-animation-container {
-    position: inherit;
-    height: 503px;
-}
-
 .products .hero__wrapper {
     background: url(../../assets/images/products/hero-bg.jpeg) center no-repeat;
     background-size: cover;
@@ -30,11 +25,62 @@
     animation: revealContentHover 5s;
 }
 
+.products .heart__icon {
+    fill: none;
+}
+
+.products .heart__icon.active {
+    path {
+
+        fill: #E53835;
+    }
+}
+
+.products .card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(167px, 380px))
+}
+
+/* <!-- pagination --> */
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.pagination li {
+    margin-right: 5px;
+}
+
+.pagination li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.pagination li a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination li.active a {
+    background-color: #e4db00;
+    color: #4d4d4d;
+    border-color: #e4db00;
+}
+
+.pagination .ellipsis {
+    pointer-events: none;
+    display: flex;
+    align-items: end;
+}
+
 @keyframes revealContent {
     0% {
         max-width: 100vw;
         width: 100vw;
-        height: calc(50vmin + 56px);
+        height: calc(60vmin);
         border-radius: 0;
         display: flex;
         justify-content: center;
@@ -82,9 +128,22 @@
 @media only screen and (max-width: 768px) {
     .hero {
         width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .products .card__wrapper {
+        grid-template-columns: repeat(3, minmax(167px, 380px))
+    }
+}
+
+
+@media (min-width: 992px) {
+    .products .card img {
+        aspect-ratio: 340 / 300;
     }
 }

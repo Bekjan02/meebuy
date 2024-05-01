@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  plugins: [require('tailwindcss'), require('autoprefixer')],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
   content: [
     './**/*.{html,js}',
     './pages/**/*.{html,js}',
@@ -26,13 +30,14 @@ module.exports = {
       screens: {
         sm: '640px',
         'lg-md': '992px',
-        'full-hd': '1440px',
       },
       container: {
         center: true,
         padding: {
           DEFAULT: '1rem',
-          'full-hd': '5rem',
+        },
+        screens: {
+          '2xl': '1200px', // Здесь ширина будет 1200px начиная с 1440px
         },
       },
       boxShadow: {
