@@ -893,6 +893,10 @@ input{
   bottom: -28px;
 }
 
+.left-\[41\%\]{
+  left: 41%;
+}
+
 .isolate{
   isolation: isolate;
 }
