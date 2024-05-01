@@ -113,3 +113,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+// const hearts = document.querySelectorAll(".heart");
+// hearts.forEach((heart) => {
+//   heart.addEventListener("click", toggleActiveHeart);
+// });
+
+// function toggleActiveHeart(event) {
+//   event.currentTarget.classList.toggle("text-logo-color");
+// }

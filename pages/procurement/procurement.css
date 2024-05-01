@@ -147,3 +147,50 @@
   stroke: red;
   stroke-width: 2;
 }
+
+.icon-container {
+  position: relative;
+}
+.icon-text {
+  width: 100px;
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 10px;
+  padding: 5px;
+  color: #e4db00;
+  position: absolute;
+  z-index: 1;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.icon-container:hover .icon-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.heart {
+  position: relative;
+}
+
+.heart:hover {
+  padding: 0;
+  margin: 0;
+}
+.heart:hover .red {
+  fill: red;
+  transition: fill 0.3s;
+}
+
+.heart:hover rect {
+  fill: red;
+  transition: fill 0.3s;
+}
+.heart:hover .yellow {
+  fill: red;
+}
