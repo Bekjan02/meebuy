@@ -18,3 +18,9 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+.tariffs .tariffs__info p {
+    font-size: 18px;
+    color: #4D4D4D;
+    text-align: center;
+}
