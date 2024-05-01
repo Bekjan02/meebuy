@@ -78,13 +78,13 @@
     </div>
     <!-- burger menu -->
     <div
-      class="burgerMenu h-screen bg-dark fixed bottom-0 right-0 w-screen shadow-lg transition-transform duration-300 ease-in-out z-[2] lg-md:hidden px-5 translate-x-full"
+      class="burgerMenu h-screen bg-dark fixed bottom-0 right-0 w-screen shadow-lg transition-transform duration-300 ease-in-out z-50 lg-md:hidden px-5 translate-x-full"
       id="burgerMenu">
       <!-- close icon -->
       <img class="absolute top-[18px] right-5" src="../../assets/images/icons/close.svg" alt="Close" id="closeIcon" />
-      <div class="flex flex-col justify-between h-full">
-        <div class="text-white">
-          <ul class="flex flex-col justify-center items-center h-full gap-12">
+      <div class="flex flex-col justify-center h-full">
+        <div class="text-white flex flex-col gap-[30px]">
+          <ul class="flex flex-col justify-center items-center h-full gap-10">
             <li class="text-base font-medium uppercase">
               <a href="/pages/suppliers/suppliers.html"> Поставщики </a>
             </li>
@@ -120,7 +120,8 @@
             </div>
           </div>
         </div>
-        <img src="../../assets/images/icons/meebuy.svg" alt="Meebuy" />
+        <img class="absolute bottom-0 left-1/2 -translate-x-1/2" src="../../assets/images/icons/meebuy.svg"
+          alt="Meebuy" />
       </div>
     </div>
   </header>
