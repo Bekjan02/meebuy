@@ -1,0 +1,20 @@
+.tariffs .tariffs__info {
+    border: 1px solid #C1BA01;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tariffs .tariffs__info-recommended {
+    background: rgba(193, 186, 1, 0.3);
+    padding: 15px 10px 15px 10px;
+}
+.tariffs .tariffs__info-price {
+    font-size: 36px;
+    font-weight: 900;
+    color: #2DC071;
+}
+
+.tariffs .tariffs__info-price span {
+    font-size: 16px;
+    font-weight: 400;
+}
