@@ -822,6 +822,16 @@ input{
   margin-bottom: 1.75rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -2000,6 +2010,14 @@ input{
   border-radius: 0.75rem;
 }
 
+.rounded-\[15\]{
+  border-radius: 15;
+}
+
+.rounded-\[18px\]{
+  border-radius: 18px;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2206,6 +2224,11 @@ input{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FFFB98\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 152 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
@@ -2489,6 +2512,10 @@ input{
 
 .font-poppins{
   font-family: Poppins;
+}
+
+.font-sans{
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-\[12px\]{
