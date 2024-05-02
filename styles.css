@@ -701,6 +701,10 @@ input{
   bottom: 2rem;
 }
 
+.bottom-\[-28px\]{
+  bottom: -28px;
+}
+
 .end-0{
   inset-inline-end: 0px;
 }
@@ -711,6 +715,10 @@ input{
 
 .left-6{
   left: 1.5rem;
+}
+
+.left-\[41\%\]{
+  left: 41%;
 }
 
 .right-0{
@@ -739,162 +747,6 @@ input{
 
 .top-\[18px\]{
   top: 18px;
-}
-
-.right-12{
-  right: 3rem;
-}
-
-.bottom-12{
-  bottom: 3rem;
-}
-
-.bottom-3{
-  bottom: 0.75rem;
-}
-
-.left-\[\]{
-  left: ;
-}
-
-.left-\[5-\%\]{
-  left: 5-%;
-}
-
-.left-\[50\%\]{
-  left: 50%;
-}
-
-.left-\[40\%\]{
-  left: 40%;
-}
-
-.bottom-\[-\]{
-  bottom: -;
-}
-
-.bottom-\[-20px\]{
-  bottom: -20px;
-}
-
-.top-6{
-  top: 1.5rem;
-}
-
-.top-9{
-  top: 2.25rem;
-}
-
-.top-\[\]{
-  top: ;
-}
-
-.top-\[30\%\]{
-  top: 30%;
-}
-
-.top-\[40\%\]{
-  top: 40%;
-}
-
-.top-\[60\%\]{
-  top: 60%;
-}
-
-.left-\[\%\]{
-  left: %;
-}
-
-.left-\[42\%\]{
-  left: 42%;
-}
-
-.left-\[44\%\]{
-  left: 44%;
-}
-
-.left-\[4\%\]{
-  left: 4%;
-}
-
-.left-\[46\%\]{
-  left: 46%;
-}
-
-.left-\[\%0\]{
-  left: %0;
-}
-
-.bottom-10{
-  bottom: 2.5rem;
-}
-
-.bottom-40{
-  bottom: 10rem;
-}
-
-.bottom-72{
-  bottom: 18rem;
-}
-
-.bottom-64{
-  bottom: 16rem;
-}
-
-.bottom-\[26px\]{
-  bottom: 26px;
-}
-
-.bottom-\[260px\]{
-  bottom: 260px;
-}
-
-.bottom-\[20px\]{
-  bottom: 20px;
-}
-
-.bottom-\[120px\]{
-  bottom: 120px;
-}
-
-.bottom-\[170px\]{
-  bottom: 170px;
-}
-
-.bottom-\[270px\]{
-  bottom: 270px;
-}
-
-.bottom-\[274px\]{
-  bottom: 274px;
-}
-
-.left-\[45\%\]{
-  left: 45%;
-}
-
-.left-\[43\%\]{
-  left: 43%;
-}
-
-.bottom-7{
-  bottom: 1.75rem;
-}
-
-.bottom-2{
-  bottom: 0.5rem;
-}
-
-.bottom-\[-10px\]{
-  bottom: -10px;
-}
-
-.bottom-\[-28px\]{
-  bottom: -28px;
-}
-
-.left-\[41\%\]{
-  left: 41%;
 }
 
 .isolate{
@@ -1028,10 +880,6 @@ input{
 
 .mt-\[52px\]{
   margin-top: 52px;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .box-border{
@@ -1800,10 +1648,6 @@ input{
   gap: 2rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-9{
   gap: 2.25rem;
 }
@@ -2501,6 +2345,11 @@ input{
   padding-right: 1.5rem;
 }
 
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2526,11 +2375,6 @@ input{
   padding-bottom: 1.75rem;
 }
 
-.px-7{
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2545,6 +2389,10 @@ input{
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pe-10{
@@ -2573,38 +2421,6 @@ input{
 
 .pt-14{
   padding-top: 3.5rem;
-}
-
-.pb-7{
-  padding-bottom: 1.75rem;
-}
-
-.pb-4{
-  padding-bottom: 1rem;
-}
-
-.pt-6{
-  padding-top: 1.5rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
-}
-
-.pt-1{
-  padding-top: 0.25rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .pt-2{
@@ -2873,11 +2689,6 @@ input{
 .text-logo-color{
   --tw-text-opacity: 1;
   color: rgb(228 219 0 / var(--tw-text-opacity));
-}
-
-.text-red-600{
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -3206,14 +3017,14 @@ input{
   transition-duration: 150ms;
 }
 
-.transition-transform{
-  transition-property: transform;
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-colors{
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+.transition-transform{
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -3408,14 +3219,6 @@ input{
 }
 
 @media (min-width: 768px){
-  .md\:bottom-8{
-    bottom: 2rem;
-  }
-
-  .md\:right-9{
-    right: 2.25rem;
-  }
-
   .md\:my-10{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
@@ -3455,20 +3258,8 @@ input{
     position: absolute;
   }
 
-  .lg-md\:relative{
-    position: relative;
-  }
-
   .lg-md\:right-9{
     right: 2.25rem;
-  }
-
-  .lg-md\:bottom-8{
-    bottom: 2rem;
-  }
-
-  .lg-md\:right-0{
-    right: 0px;
   }
 
   .lg-md\:block{
