@@ -73,15 +73,26 @@ const registerTab = document.getElementById("register-tab");
 const loginTab = document.getElementById("login-tab");
 const registerForm = document.getElementById("register-form");
 const loginForm = document.getElementById("login-form");
+const loginImg = document.getElementById("login-img");
+const RegisterImg = document.getElementById("register-img");
+const login = document.getElementById("login");
+const register = document.getElementById("register");
+const input = document.getElementById("input");
 
 const toggleTabRegister = () => {
   registerForm.style.display = "flex";
   loginForm.style.display = "none";
+  register.classList.add("register-an");
+  input.classList.add("input-change");
+  RegisterImg.classList.add("register-img");
 };
 
 const toggleTabLogin = () => {
   loginForm.style.display = "flex";
   registerForm.style.display = "none";
+  login.classList.add("login-an");
+  input.classList.add("input-change");
+  loginImg.classList.add("login-img");
 };
 
 registerTab.addEventListener("click", toggleTabRegister);

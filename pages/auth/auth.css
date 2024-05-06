@@ -5,13 +5,71 @@
 .cards {
   box-shadow: #b1b1b14d 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
-#register-img,
-#login-img {
-  opacity: 1;
-  transition: opacity 0.5s linear; /* Smooth transition with linear timing function */
-}
 
-#register-img.hide,
-#login-img.hide {
-  opacity: 0;
+.login-form::after {
+  content: "";
+  display: block;
+
+  animation: revealContentHover 1s;
+}
+@keyframes revealContentHover {
+  0% {
+    width: 100%;
+  }
+  80% {
+    width: 86%;
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.login-an {
+  animation: loginClick 1s;
+}
+@keyframes loginClick {
+  0% {
+    transform: translateY(100px);
+    animation-duration: 0s;
+  }
+}
+.register-an {
+  animation: registerClick 1s;
+}
+@keyframes registerClick {
+  0% {
+    transform: translateY(-200px);
+    animation-duration: 0s;
+  }
+}
+.input-change {
+  animation: inputChange 1s;
+}
+@keyframes inputChange {
+  0% {
+    opacity: 0.5;
+    animation-duration: 1s;
+  }
+}
+.register-img {
+  width: 466px;
+  animation: registerImg;
+}
+.login-img {
+  width: 100%;
+  animation: loginImg;
+}
+@keyframes registerImg {
+  0% {
+    opacity: 0.5;
+    animation-duration: 1s;
+    width: 466px;
+  }
+}
+@keyframes loginImg {
+  0% {
+    opacity: 0.5;
+    animation-duration: 1s;
+    width: 100%;
+  }
 }
