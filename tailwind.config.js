@@ -30,11 +30,16 @@ module.exports = {
       screens: {
         sm: '640px',
         'lg-md': '992px',
+        '2xl': '1440px',
+      },
+      gridTemplateColumns: {
+        offers: 'repeat(4,minmax(278px, 1fr))',
       },
       container: {
         center: true,
         padding: {
           DEFAULT: '1rem',
+          '2xl': 0,
         },
         screens: {
           '2xl': '1200px', // Здесь ширина будет 1200px начиная с 1440px
