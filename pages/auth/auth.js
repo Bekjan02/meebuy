@@ -44,3 +44,45 @@ const toggleAuthTab = (clickedTab) => {
 auth_tabs.forEach((tab) => {
   tab.addEventListener("click", () => toggleAuthTab(tab));
 });
+
+document.addEventListener("click", function (event) {
+  if (event.target.classList.contains("show-password")) {
+    const passwordInput = event.target
+      .closest(".flex")
+      .querySelector(".password-input");
+    const showPasswordIcon = event.target;
+    const isPasswordVisible = passwordInput.getAttribute("type") === "text";
+
+    if (isPasswordVisible) {
+      passwordInput.setAttribute("type", "password");
+      showPasswordIcon.setAttribute(
+        "src",
+        "../../assets/images/icons/password-close.svg"
+      );
+    } else {
+      passwordInput.setAttribute("type", "text");
+      showPasswordIcon.setAttribute(
+        "src",
+        "../../assets/images/icons/password-open.svg"
+      );
+    }
+  }
+});
+
+const registerTab = document.getElementById("register-tab");
+const loginTab = document.getElementById("login-tab");
+const registerForm = document.getElementById("register-form");
+const loginForm = document.getElementById("login-form");
+
+const toggleTabRegister = () => {
+  registerForm.style.display = "flex";
+  loginForm.style.display = "none";
+};
+
+const toggleTabLogin = () => {
+  loginForm.style.display = "flex";
+  registerForm.style.display = "none";
+};
+
+registerTab.addEventListener("click", toggleTabRegister);
+loginTab.addEventListener("click", toggleTabLogin);

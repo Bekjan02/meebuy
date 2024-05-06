@@ -725,6 +725,10 @@ input{
   right: 0px;
 }
 
+.right-3{
+  right: 0.75rem;
+}
+
 .right-4{
   right: 1rem;
 }
@@ -739,6 +743,10 @@ input{
 
 .start-0{
   inset-inline-start: 0px;
+}
+
+.top-11{
+  top: 2.75rem;
 }
 
 .top-16{
@@ -817,9 +825,9 @@ input{
   margin: auto;
 }
 
-.my-7{
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-10{
@@ -827,9 +835,9 @@ input{
   margin-bottom: 2.5rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.my-7{
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .mb-10{
@@ -890,6 +898,18 @@ input{
 
 .mt-\[52px\]{
   margin-top: 52px;
+}
+
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
+.mt-0{
+  margin-top: 0px;
 }
 
 .box-border{
@@ -1013,6 +1033,14 @@ input{
   height: 2.25rem;
 }
 
+.h-\[20px\]{
+  height: 20px;
+}
+
+.h-\[24px\]{
+  height: 24px;
+}
+
 .h-\[44px\]{
   height: 44px;
 }
@@ -1029,6 +1057,14 @@ input{
   height: 100vh;
 }
 
+.h-\[28px\]{
+  height: 28px;
+}
+
+.h-\[25px\]{
+  height: 25px;
+}
+
 .w-1\/3{
   width: 33.333333%;
 }
@@ -1041,12 +1077,40 @@ input{
   width: 2.25rem;
 }
 
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[20px\]{
+  width: 20px;
+}
+
+.w-\[24px\]{
+  width: 24px;
+}
+
+.w-\[323px\]{
+  width: 323px;
+}
+
 .w-\[340px\]{
   width: 340px;
 }
 
 .w-\[350px\]{
   width: 350px;
+}
+
+.w-\[400px\]{
+  width: 400px;
+}
+
+.w-\[50\%\]{
+  width: 50%;
+}
+
+.w-\[534px\]{
+  width: 534px;
 }
 
 .w-\[89px\]{
@@ -1076,6 +1140,46 @@ input{
 
 .w-screen{
   width: 100vw;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[390px\]{
+  width: 390px;
+}
+
+.w-\[640px\]{
+  width: 640px;
+}
+
+.w-\[35px\]{
+  width: 35px;
+}
+
+.w-\[28px\]{
+  width: 28px;
+}
+
+.w-\[25px\]{
+  width: 25px;
+}
+
+.w-\[80\]{
+  width: 80;
+}
+
+.w-\[80\%\]{
+  width: 80%;
+}
+
+.w-\[90\%\]{
+  width: 90%;
+}
+
+.w-\[90\]{
+  width: 90;
 }
 
 .max-w-\[106px\]{
@@ -1982,8 +2086,16 @@ input{
   border-radius: 1rem;
 }
 
+.rounded-\[12px\]{
+  border-radius: 12px;
+}
+
 .rounded-\[15px\]{
   border-radius: 15px;
+}
+
+.rounded-\[18px\]{
+  border-radius: 18px;
 }
 
 .rounded-\[51px\]{
@@ -2008,14 +2120,6 @@ input{
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded-\[15\]{
-  border-radius: 15;
-}
-
-.rounded-\[18px\]{
-  border-radius: 18px;
 }
 
 .rounded-b{
@@ -2152,6 +2256,11 @@ input{
   border-color: rgb(160 160 160 / var(--tw-border-opacity));
 }
 
+.border-\[\#E6E6E6\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(230 230 230 / var(--tw-border-opacity));
+}
+
 .border-grey-light{
   --tw-border-opacity: 1;
   border-color: rgb(160 160 160 / var(--tw-border-opacity));
@@ -2175,6 +2284,11 @@ input{
 .bg-\[\#F6F6F6\]{
   --tw-bg-opacity: 1;
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F9F9F9\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FFFCB7\]{
@@ -2224,11 +2338,6 @@ input{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFFB98\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 251 152 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
@@ -2341,6 +2450,10 @@ input{
      object-fit: scale-down;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-2{
   padding: 0.5rem;
 }
@@ -2351,6 +2464,16 @@ input{
 
 .p-\[20px\]{
   padding: 20px;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-4{
@@ -2371,6 +2494,11 @@ input{
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-\[14px\]{
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .py-16{
@@ -2398,6 +2526,11 @@ input{
   padding-bottom: 1.75rem;
 }
 
+.py-\[14px\]{
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2412,6 +2545,10 @@ input{
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pb-28{
+  padding-bottom: 7rem;
 }
 
 .pb-4{
@@ -2512,10 +2649,6 @@ input{
 
 .font-poppins{
   font-family: Poppins;
-}
-
-.font-sans{
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-\[12px\]{
@@ -2668,6 +2801,16 @@ input{
   color: rgb(104 104 104 / var(--tw-text-opacity));
 }
 
+.text-\[\#737373\]{
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+
+.text-\[\#777777\]{
+  --tw-text-opacity: 1;
+  color: rgb(119 119 119 / var(--tw-text-opacity));
+}
+
 .text-\[\#8A8A8A\]{
   --tw-text-opacity: 1;
   color: rgb(138 138 138 / var(--tw-text-opacity));
@@ -2723,6 +2866,11 @@ input{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#0035FF\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 53 255 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -2757,6 +2905,10 @@ input{
 
 .decoration-wavy{
   text-decoration-style: wavy;
+}
+
+.decoration-1{
+  text-decoration-thickness: 1px;
 }
 
 .antialiased{
@@ -3222,6 +3374,10 @@ input{
     width: 400px;
   }
 
+  .sm\:w-\[100\%\]{
+    width: 100%;
+  }
+
   .sm\:justify-between{
     justify-content: space-between;
   }
@@ -3289,6 +3445,14 @@ input{
     right: 2.25rem;
   }
 
+  .lg-md\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .lg-md\:mt-8{
+    margin-top: 2rem;
+  }
+
   .lg-md\:block{
     display: block;
   }
@@ -3305,6 +3469,10 @@ input{
     height: 82px;
   }
 
+  .lg-md\:w-\[1000px\]{
+    width: 1000px;
+  }
+
   .lg-md\:w-\[357px\]{
     width: 357px;
   }
@@ -3313,16 +3481,41 @@ input{
     width: 443px;
   }
 
+  .lg-md\:w-\[466px\]{
+    width: 466px;
+  }
+
   .lg-md\:w-\[92px\]{
     width: 92px;
+  }
+
+  .lg-md\:w-\[534px\]{
+    width: 534px;
+  }
+
+  .lg-md\:w-\[400px\]{
+    width: 400px;
+  }
+
+  .lg-md\:flex-row{
+    flex-direction: row;
   }
 
   .lg-md\:items-center{
     align-items: center;
   }
 
+  .lg-md\:justify-center{
+    justify-content: center;
+  }
+
   .lg-md\:gap-\[27px\]{
     gap: 27px;
+  }
+
+  .lg-md\:rounded-r-2xl{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
 
   .lg-md\:px-16{
