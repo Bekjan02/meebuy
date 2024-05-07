@@ -212,27 +212,19 @@
 
     <!-- tabs -->
     <div class="container flex flex-col items-center pb-28">
-      <div
-        class="cards my-10 flex items-center rounded-[18px] cursor-pointer lg-md:w-[400px] w-[350px] text-center"
-      >
-        <div
-         id="register-tab"
-          class="auth_tab py-3 w-[50%] text-[18px] font-semibold font-mulish text-[#2B292C] rounded-[18px]"
-        >
+      <div id="tab-container" class="cards my-10 flex items-center rounded-[18px] cursor-pointer lg-md:w-[400px] w-[350px] text-center">
+        <div id="register-tab" class="tab-hover auth_tab py-3 w-[50%] text-[18px] font-semibold font-mulish text-[#2B292C] rounded-[18px]">
           Регистрация
         </div>
-        <div
-        id="login-tab"
-          class="auth_tab py-3 w-[50%] text-[18px] font-semibold font-mulish text-[#2B292C] rounded-[18px]"
-        >
+        <div id="login-tab" class="auth_tab py-3 w-[50%] text-[18px] font-semibold font-mulish text-[#2B292C] rounded-[18px]">
           Вход
         </div>
       </div>
-     
-     <div class="lg-md:card flex lg-md:flex-row flex-col lg-md:justify-center  lg-md:w-[1000px]   rounded-2xl">
-      <div class="lg-md:w-[534px] s:w-[640px] w-[390px] p-10 mx-auto ">
+      
+     <div class="cards flex lg-md:flex-row flex-col lg-md:justify-center  lg-md:w-[1000px]   rounded-2xl">
+      <div class="lg-md:w-[534px] w-[390px] p-10 mx-auto ">
        <!-- register -->
-        <div id="register-form" style="display: flex; flex-direction: column; gap: 24px; z-index: 0; position: relative" class=" w-full mb-6 ">
+        <div id="register-form" style="max-height: 0px; display: flex; flex-direction: column; gap: 24px; z-index: 0; position: relative" class="overflow-hidden w-full mb-6 ">
           <div class="flex flex-col gap-3  w-full">
             <label clas="text-[18px] font-mulish" for=""
               >Ваш адрес электронной почты Email *</label
@@ -243,7 +235,7 @@
               class="border border-[#E6E6E6] w-[100%] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
             />
           </div>
-          <div id="input"  class="flex flex-col gap-3">
+          <div id="name"  class="input flex flex-col gap-3">
             <label for="">Ваше ФИО*</label>
             <input
               type="text"
@@ -251,7 +243,7 @@
               class="border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
             />
           </div>
-          <div   class="flex flex-col gap-3">
+          <div id="number"  class="input flex flex-col gap-3">
             <label for="">Ваш номер телефона*</label>
             <input
               type="text"
@@ -259,7 +251,7 @@
               class="border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
             />
           </div>
-          <div class="flex lg-md:flex-row flex-col gap-2">
+          <div id="password"  class=" input flex lg-md:flex-row flex-col gap-2">
             <div class="flex flex-col gap-3 relative">
               <label for="">Придумайте пароль *</label>
               <input
@@ -267,7 +259,7 @@
                 placeholder="********"
                 class="password-input border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
               />
-              <div class="absolute right-3 top-11">
+              <div class="absolute right-3 top-12">
                 <img
                   class="show-password w-[24px] h-[24px]"
                   style="display: block"
@@ -283,7 +275,7 @@
                 placeholder="********"
                 class="password-input border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
               />
-              <div class="absolute right-3 top-11">
+              <div class="absolute right-3 top-12">
                 <img
                   class="show-password w-[24px] h-[24px]"
                   style="display: block"
@@ -293,7 +285,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-2">
+          <div id="confirm" class="input flex items-center gap-2">
             <input type="checkbox" class="w-[25px] h-[25px] lg-md: mr-1" />
             <p class="text-[16px] font-normal font-mulish text-[#777777]">
               Я ознакомился и согласен с условиями
@@ -346,7 +338,7 @@
           </div>
         </div>
         <!-- login -->
-        <div id="login-form" style="display: none; flex-direction: column; gap: 24px" class="login-form w-full mb-6 ">
+        <div id="login-form" style="display: flex; flex-direction: column; gap: 30px" class=" login-form overflow-hidden w-full mb-6 ">
           <div class="flex flex-col gap-3  w-full">
             <label clas="text-[18px] font-mulish" for=""
               >Ваш адрес электронной почты Email *</label
@@ -357,15 +349,14 @@
               class="border border-[#E6E6E6] w-[100%] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
             />
           </div>
-         <!-- <div id="login" class="flex flex-col gap-3">  -->
-          <div id="input" class="flex flex-col gap-3 relative">
-          <label for="">Ваш пароль*</label>
-          <input
-            type="password"
-            placeholder="********"
-            class="password-input border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
-          />
-          <div class="absolute right-3 top-11">
+          <div id="passwordLog" class="flex flex-col gap-3 relative">
+            <label for="">Ваш пароль*</label>
+            <input
+              type="password"
+              placeholder="********"
+              class="password-input border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
+            />
+          <div class="absolute right-3 top-12">
             <img
               class="show-password w-[24px] h-[24px]"
               style="display: block"
@@ -419,12 +410,10 @@
               </li>
             </ul>
         </div>
-       <!-- </ div> -->
         </div>
       </div>
-      <img id="register-img" style="display: block;" class="object-cover lg-md:rounded-r-2xl  sm: w-[640px] " src="../../assets/images/auth/auth-bg.jpeg" />
-      <img id="login-img" style="display: none;" class="object-cover lg-md:rounded-r-2xl  lg-md:w-[466px] sm: w-[640px] " src="../../assets/images/auth/auth-bg.jpeg" />
-
+     
+      <img id="login-img" style="display: block;" class="login-img transition-all duration-500 ease-linear object-cover lg-md:rounded-r-2xl w-[466px]" src="../../assets/images/auth/auth-bg.jpeg" />
      </div>
     </div>
 

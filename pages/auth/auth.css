@@ -1,31 +1,15 @@
-.tab_hover {
+.tab-hover {
+  color: hsl(280, 4%, 17%);
+  transition: background-color 0.6s ease-in-out;
   background-color: #fffb98;
-  transform: background-color 0.5s ease-in-out;
 }
 .cards {
   box-shadow: #b1b1b14d 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
-.login-form::after {
-  content: "";
-  display: block;
-
-  animation: revealContentHover 1s;
-}
-@keyframes revealContentHover {
-  0% {
-    width: 100%;
-  }
-  80% {
-    width: 86%;
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
+/* button animation */
 .login-an {
-  animation: loginClick 1s;
+  animation: loginClick 0.8s;
 }
 @keyframes loginClick {
   0% {
@@ -34,7 +18,7 @@
   }
 }
 .register-an {
-  animation: registerClick 1s;
+  animation: registerClick 0.8s;
 }
 @keyframes registerClick {
   0% {
@@ -42,34 +26,58 @@
     animation-duration: 0s;
   }
 }
+
+/* input animations */
 .input-change {
   animation: inputChange 1s;
 }
 @keyframes inputChange {
   0% {
-    opacity: 0.5;
+    opacity: 0.4;
+    animation-duration: 0.2s;
+  }
+  50% {
+    opacity: 0.6;
+    animation-duration: 0.4s;
+  }
+  100% {
+    opacity: 1;
     animation-duration: 1s;
   }
 }
-.register-img {
-  width: 466px;
-  animation: registerImg;
+.password-an {
+  animation: passwordChange 1s;
 }
-.login-img {
-  width: 100%;
-  animation: loginImg;
-}
-@keyframes registerImg {
+@keyframes passwordChange {
   0% {
-    opacity: 0.5;
+    opacity: 0;
+    animation-duration: 0.2s;
+  }
+  50% {
+    opacity: 0.2;
+    animation-duration: 0.6s;
+  }
+  100% {
+    opacity: 1;
     animation-duration: 1s;
-    width: 466px;
   }
 }
-@keyframes loginImg {
+.password-an-log {
+  animation: passwordLogChange 1s;
+}
+@keyframes passwordLogChange {
   0% {
-    opacity: 0.5;
-    animation-duration: 1s;
-    width: 100%;
+    opacity: 0.4;
+    animation-duration: 0.6s;
   }
+  50% {
+    opacity: 0.6;
+    animation-duration: 0.7s;
+  }
+}
+
+#register-form,
+#login-form {
+  overflow: hidden;
+  transition: max-height 0.9s ease-in-out;
 }

@@ -73,27 +73,66 @@ const registerTab = document.getElementById("register-tab");
 const loginTab = document.getElementById("login-tab");
 const registerForm = document.getElementById("register-form");
 const loginForm = document.getElementById("login-form");
-const loginImg = document.getElementById("login-img");
-const RegisterImg = document.getElementById("register-img");
 const login = document.getElementById("login");
 const register = document.getElementById("register");
-const input = document.getElementById("input");
+const lastName = document.getElementById("name");
+const number = document.getElementById("number");
+const password = document.getElementById("password");
+const passwordLog = document.getElementById("passwordLog");
+const confirmAuth = document.getElementById("confirm");
 
 const toggleTabRegister = () => {
-  registerForm.style.display = "flex";
-  loginForm.style.display = "none";
+  registerForm.style.maxHeight = `${registerForm.scrollHeight}px`;
+  loginForm.style.maxHeight = "0px";
+  lastName.classList.add("input-change");
+  number.classList.add("password-an");
+  password.classList.add("password-an");
+  confirmAuth.classList.add("password-an");
   register.classList.add("register-an");
-  input.classList.add("input-change");
-  RegisterImg.classList.add("register-img");
+  registerTab.classList.add("tab-hover");
+  loginTab.classList.remove("tab-hover");
+  localStorage.setItem("activeTab", "register");
+
+  registerForm.addEventListener(
+    "animationend",
+    () => {
+      registerForm.classList.remove("input-change", "password-an");
+      lastName.classList.remove("input-change");
+      number.classList.remove("password-an");
+      password.classList.remove("password-an");
+      confirmAuth.classList.remove("password-an");
+      register.classList.remove("register-an");
+    },
+    { once: true }
+  );
 };
 
 const toggleTabLogin = () => {
-  loginForm.style.display = "flex";
-  registerForm.style.display = "none";
+  loginForm.style.maxHeight = `${loginForm.scrollHeight}px`;
+  registerForm.style.maxHeight = "0px";
   login.classList.add("login-an");
-  input.classList.add("input-change");
-  loginImg.classList.add("login-img");
+  passwordLog.classList.add("password-an-log");
+  loginTab.classList.add("tab-hover");
+  registerTab.classList.remove("tab-hover");
+  localStorage.setItem("activeTab", "login");
+
+  loginForm.addEventListener(
+    "animationend",
+    () => {
+      loginForm.classList.remove("login-an", "password-an-log", "login_img");
+      passwordLog.classList.remove("password-an-log");
+      login.classList.remove("login-an");
+    },
+    { once: true }
+  );
 };
+const activeTab = localStorage.getItem("activeTab");
+
+if (activeTab === "register") {
+  toggleTabRegister();
+} else if (activeTab === "login") {
+  toggleTabLogin();
+}
 
 registerTab.addEventListener("click", toggleTabRegister);
 loginTab.addEventListener("click", toggleTabLogin);
