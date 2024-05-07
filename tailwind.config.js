@@ -48,6 +48,8 @@ module.exports = {
       boxShadow: {
         'card-shadow':
           '#b1b1b14d 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em',
+        'category-black': '0px 0px 8px 0px #E4DB00CC',
+        'category-white': '0px 0px 10px 0px #B1B1B180',
       },
     },
   },
