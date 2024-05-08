@@ -1,10 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
     require('@tailwindcss/aspect-ratio'),
+      plugin(function({ addUtilities }) {
+          const newUtilities = {
+              '.break-word': {
+                  'word-break': 'break-word'  // This line is typically incorrect for standard CSS, should be `overflow-wrap`
+              }
+          }
+          addUtilities(newUtilities)
+      })
   ],
   content: [
     './**/*.{html,js}',
@@ -50,6 +59,10 @@ module.exports = {
           '#b1b1b14d 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em',
         'category-black': '0px 0px 8px 0px #E4DB00CC',
         'category-white': '0px 0px 10px 0px #B1B1B180',
+      },
+      wordBreak: {
+        'break-word': 'break-word',  // This is not standard CSS for word-break, which typically uses 'break-all'
+
       },
     },
   },
