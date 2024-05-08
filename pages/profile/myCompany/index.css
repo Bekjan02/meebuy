@@ -1,14 +1,7 @@
-.card__item {
-    padding: 30px 20px;
-}
+
 
 .content__title {
     font-size: 18px;
     font-weight: 800;
 }
 
-@media (min-width: 992px) {
-    .card__item {
-        padding: 40px 40px;
-    }
-}
