@@ -13,8 +13,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../profile.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../../profile/profile.css" />
+    <link rel="stylesheet" href="../../profile/tenders/index.css" />
+    <link rel="stylesheet" href="./provider.css" />
   </head>
 
   <body>
@@ -225,19 +226,12 @@
       </div>
     </nav>
     <main class="profile-myCompany">
-      <section class="heading">
-        <div class="container">
-          <h1
-            class="font-black text-dark-logo text-lg uppercase text-center sm:text-2xl lg-md:text-3xl xl:text-4xl"
-          >
-            личный кабинет
-          </h1>
-        </div>
-      </section>
-      <div class="container">
-        <div class="lg-md:grid grid-cols-3 lg-md:gap-5 xl:grid-cols-4">
+      <div class="container my-16">
+        <div
+          class="flex lg-md:flex-row flex-col gap-7 lg-md:items-start items-center"
+        >
           <!--  this section is for avatar  -->
-          <section class="profile__navigate mt-[30px] lg-md:mt-[50px]">
+          <section class="profile__navigate w-[278px]">
             <div class="container">
               <div class="shadow-card-shadow rounded-[10px] px-5 py-[15px]">
                 <!-- upload avatar-->
@@ -390,20 +384,40 @@
               </div>
             </div>
           </section>
-          <!-- these sections are for main content  -->
-          <section class="main-content mt-[30px] lg-md:mt-[50px]">
-            <div class="container">
-              <h1 class="text-lg font-semibold text-dark-logo">
-                Личный кабинет
-              </h1>
-              <p class="text-lg font-semibold text-dark-logo mt-1">Закупки</p>
+          <div
+            class="cards flex flex-col justify-center text-center gap-9 py-16 px-20 rounded-[15px]"
+          >
+            <p class="text-[#4D4D4D] font-bold font-mulish text-xl">
+              Какая основная цель регистрации на сайте?
+            </p>
+            <div class="flex items-center gap-7">
+              <div
+                class="flex items-center lg:gap-3 gap-2 bg-[#E4DB00] rounded-[7px] py-3 lg-md:px-9 px-3"
+              >
+                <img src="../../../assets/images/icons/cruise.svg" alt="" />
+                <button
+                  class="text-[#2B292C] lg-md:uppercase lg-md:text-[14px] text-[16px] font-mulish"
+                >
+                  Продать товары оптом
+                </button>
+              </div>
+              <div
+                class="flex items-center lg:gap-3 gap-2 bg-[#E4DB00] rounded-[7px] py-[14px] lg-md:px-9 px-3"
+              >
+                <img src="../../../assets/images/icons/basket.svg" alt="" />
+                <button
+                  class="text-[#2B292C] lg-md:uppercase lg-md:text-[14px] text-[16px] font-mulish"
+                >
+                  Купить товары оптом
+                </button>
+              </div>
             </div>
-          </section>
+          </div>
         </div>
       </div>
     </main>
-    <script src="./index.js"></script>
-    <script src="../profile.js"></script>
+    <script src="../../profile/tenders/index.js"></script>
+    <script src="../../profile/profile.js"></script>
     <footer class="bg-[#222222]">
       <div class="bg-black py-4">
         <div
