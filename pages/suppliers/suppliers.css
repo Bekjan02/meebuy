@@ -154,11 +154,7 @@
   background-color: #0000004d;
   z-index: 9;
 }
-/* input[type="checkbox"] {
-  accent-color: #bab306;
-  color: #fff;
-  align-content: center;
-} */
+
 input[type="checkbox"] {
   accent-color: #bab306 !important;
   color: white !important;
@@ -183,9 +179,6 @@ input[type="checkbox"]::before {
   color: white !important;
 }
 input[type="checkbox"]:checked:after {
-  /* content: "\2713";
-  width: 17px;
-  text-align: center; */
   color: white !important;
 }
 .dark-checkbox input[type="checkbox"]:checked {

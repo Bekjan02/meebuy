@@ -21,20 +21,36 @@ const toggleSelectModal = () => {
 selectContainer.addEventListener("click", toggleSelectModal);
 
 const filterContainer = document.getElementById("filterContainer");
+const closeFilterContainer = document.getElementById("close-filter-container");
 const toggleFilter = document.getElementById("toggleFilter");
 const openFilter = document.getElementById("openFilter");
+const recommended = document.getElementById("recommended");
+const newSelect = document.getElementById("new");
 
 const toggleFilterModal = () => {
   openFilter.style.display =
     openFilter.style.display === "none" ? "block" : "none";
 };
+const toggleCloseFilterModal = () => {
+  openFilter.style.display = openFilter.style.display = "none";
+};
+const checkedFilter = (element) => {
+  const select = [recommended, newSelect];
+  for (let i = 0; i <= select.length; i++) {
+    if (select[i] === element) {
+      select[i].style.display = "block";
+    } else {
+      select[i].style.display = "none";
+    }
+  }
+};
 
-// Add event listener to the filter container to toggle modal visibility
+recommended.addEventListener("click", () => checkedFilter(recommended));
+newSelect.addEventListener("click", () => checkedFilter(newSelect));
 filterContainer.addEventListener("click", toggleFilterModal);
+closeFilterContainer.addEventListener("click", toggleCloseFilterModal);
 
-// Close filter modal when clicking outside of it
 document.addEventListener("click", (event) => {
-  // Check if the click event target is neither inside the filter container nor the filter modal
   if (
     openFilter.style.display === "block" &&
     !filterContainer.contains(event.target) &&
