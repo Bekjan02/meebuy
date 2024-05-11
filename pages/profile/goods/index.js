@@ -51,4 +51,51 @@ const toggleAddCategoryBlock = () => {
     addCategoryBlock.style.display = "none";
   }
 };
+
 buttonAddCategory.addEventListener("click", toggleAddCategoryBlock);
+
+// add goods manually
+const buttonAddGoods = document.getElementById("add-goods-button");
+const closeAddGoods = document.getElementById("close-goods-button");
+const addGoodsBlock = document.getElementById("add-goods-manually-block");
+
+const toggleAddGoodsBlock = () => {
+  if (mainSection.style.display === "block") {
+    mainSection.style.display = "none";
+    addGoodsBlock.style.display = "block";
+  } else {
+    mainSection.style.display = "block";
+    addGoodsBlock.style.display = "none";
+  }
+};
+const closeAddGoodsBlock = () => {
+  mainSection.style.display = "block";
+  addGoodsBlock.style.display = "none";
+};
+buttonAddGoods.addEventListener("click", toggleAddGoodsBlock);
+closeAddGoods.addEventListener("click", closeAddGoodsBlock);
+
+// photos upload
+const fileInputs = document.querySelectorAll(".photos__input");
+
+function handleFileLoad(event, index) {
+  const imageElement = document.getElementById(`preview${index + 1}`);
+  imageElement.src = event.target.result;
+  imageElement.classList.remove("hidden");
+  const iconElement = document.getElementById(`icon${index + 1}`);
+  iconElement.style.display = "none";
+}
+
+fileInputs.forEach((input, index) => {
+  input.addEventListener("change", () => {
+    const file = input.files[0];
+    if (file) {
+      console.log(input.id.substring(4));
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        handleFileLoad(event, index);
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+});
