@@ -11,7 +11,6 @@ const excelLoaderBlock = document.getElementById("excel-loader-block");
 
 const toggleTab = (element) => {
   const tabs = [goods, category, price, autoloader, excelLoader];
-  console.log(tabs.length, "nn");
   const blocks = [
     goodsBlock,
     categoryBlock,
