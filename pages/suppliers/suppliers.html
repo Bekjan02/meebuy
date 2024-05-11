@@ -365,7 +365,7 @@
 
       <!-- Suppliers -->
 
-      <div class="bg-[#FFFFFC] py-16">
+      <div class="bg-[#FFFFFC] py-16 relative">
         <div class="container">
           <h6
             class="text-start lg-md:text-xl font-semibold uppercase font-mulish"
@@ -375,38 +375,69 @@
           <div
             class="flex justify-between items-center md:my-10 md: mb-5 lg-md: mt-10"
           >
-            <ul
-              class="cards suppliers flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] h-[44px]"
-            >
-              <li
-                class="flex items-center gap-2 font-semibold active text-sm capitalize py-3 px-6 font-mulish active:bg-[#FFFB98] focus:bg-[#FFFB98] hover:bg-[#FFFB98] text-center rounded-[15px]"
+            <!-- desktop version -->
+            <div class="lg-md:flex hidden">
+              <ul
+                class="cards suppliers flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] h-[44px]"
               >
-                все
-                <img
-                  class="lg-md:hidden block"
-                  src="../../assets/images/suppliers/suppliers/icons/arrow-down.svg"
-                  alt=""
-                />
-              </li>
-              <div class="lg-md:flex hidden">
                 <li
+                  id="new"
+                  style="background-color: #fffb98"
+                  class="flex items-center gap-2 font-semibold active text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px]"
+                >
+                  все
+                </li>
+                <li
+                  id="suppliers"
                   class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
                 >
                   поставщики
                 </li>
                 <li
+                  id="manufactures"
                   class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
                 >
                   производители
                 </li>
                 <li
+                  id="logistics"
                   class="font-semibold text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px] hover:bg-[#FFFB98]"
                 >
                   логистика
                 </li>
-              </div>
-            </ul>
-
+              </ul>
+            </div>
+            <!-- mobile version -->
+            <div
+              class="dropdown cards bg-[#FFFB98] rounded-[10px] hover:bg-transparent lg-md:hidden"
+            >
+              <button
+                class="dropdown__btn p-2 px-4 rounded-[10px] w-full flex gap-2 items-center justify-between bg-[#FFFB98] text-dark-text"
+              >
+                <p class="text-lg">Все</p>
+                <img
+                  class="w-5 h-5"
+                  src="../../../assets/images/icons/ios-arrow.svg"
+                  alt=""
+                />
+              </button>
+              <ul
+                class="cards absolute z-50 top-[210px] dropdown__menu h-0 rounded-2xl bg-[#FFFFFF] text-dark-text overflow-hidden transition-all duration-300 ease-in text-lg"
+              >
+                <li class="dropdown__item">
+                  <a href="">Все</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="">Поставщики</a>
+                </li>
+                <li class="dropdown__item">
+                  <a href=""> Производители </a>
+                </li>
+                <li class="dropdown__item">
+                  <a href="">Логистика</a>
+                </li>
+              </ul>
+            </div>
             <div class="flex gap-5">
               <div
                 id="filterContainer"
@@ -731,6 +762,7 @@
                 style="display: none"
               >
                 <li
+                  id="recommended-list"
                   class="border-b pb-2 mb-2 flex items-center justify-between"
                 >
                   Рекомендуем
@@ -741,7 +773,10 @@
                     alt="check"
                   />
                 </li>
-                <li class="pb-2 mb-2 flex items-center justify-between">
+                <li
+                  id="new-list"
+                  class="pb-2 mb-2 flex items-center justify-between"
+                >
                   Новые
                   <img
                     id="new"
