@@ -101,7 +101,7 @@
               <div class="relative z-50 flex flex-col justify-center w-full">
                 <h2
                   style="font-size: 36px"
-                  class="text-white font-extrabold sm:pb-8 text-center"
+                  class="text-white font-extrabold sm:pb-8 text-center uppercase"
                 >
                   поставщики
                 </h2>
@@ -365,7 +365,7 @@
 
       <!-- Suppliers -->
 
-      <div class="bg-[#FFFFFC] py-16 relative">
+      <div class="bg-[#FFFFFC] py-16">
         <div class="container">
           <h6
             class="text-start lg-md:text-xl font-semibold uppercase font-mulish"
@@ -378,10 +378,10 @@
             <!-- desktop version -->
             <div class="lg-md:flex hidden">
               <ul
-                class="cards suppliers flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] h-[44px]"
+                class="cards flex items-center shadow shadow-[#B1B1B14D] rounded-[15px] h-[44px]"
               >
                 <li
-                  id="new"
+                  id="all"
                   style="background-color: #fffb98"
                   class="flex items-center gap-2 font-semibold active text-sm capitalize py-3 px-6 font-mulish text-center rounded-[15px]"
                 >
@@ -449,7 +449,7 @@
                   alt=""
                 />
               </div>
-              <!-- filtr -->
+              <!-- filter modal-->
               <div
                 id="openFilter"
                 style="display: none"
@@ -755,10 +755,10 @@
                   />
                 </a>
               </div>
-              <!-- select -->
+              <!-- select modal-->
               <ul
                 id="selectModal"
-                class="modal cards absolute top-[33%] z-50 rounded-2xl bottom-0 right-8 bg-[#fff] py-5 px-4 w-[178px] h-[113px]"
+                class="modal cards absolute top-[33.2%] z-50 rounded-2xl bottom-0 right-8 bg-[#fff] py-5 px-4 w-[178px] h-[113px]"
                 style="display: none"
               >
                 <li
@@ -788,6 +788,8 @@
               </ul>
             </div>
           </div>
+
+          <!-- card list -->
           <div class="flex flex-col gap-7">
             <div
               class="cards sm: relative flex sm:justify-between items-start p-[20px] rounded-[15px]"

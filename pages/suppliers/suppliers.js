@@ -27,7 +27,6 @@ const checkedSelect = (element) => {
   for (let i = 0; i < select.length; i++) {
     if (select[i] === element) {
       select[i].style.display = "block";
-
       setTimeout(() => {
         selectModal.style.display = "none";
         openIcon.style.display = "block";
@@ -74,9 +73,10 @@ document.addEventListener("click", (event) => {
   }
 });
 
-// dropdown mobile
+// dropdown mobile sort
 const dropdownBtn = document.querySelector(".dropdown__btn");
 const dropdownMenu = document.querySelector(".dropdown__menu");
+const dropdownItems = dropdownMenu.querySelectorAll(".dropdown__item");
 
 const openSort = () => {
   const isActive = dropdownMenu.classList.contains("active");
@@ -89,8 +89,6 @@ const openSort = () => {
 dropdownBtn.addEventListener("click", openSort);
 
 document.addEventListener("DOMContentLoaded", function () {
-  const dropdownItems = dropdownMenu.querySelectorAll(".dropdown__item");
-
   dropdownItems.forEach(function (item) {
     item.addEventListener("click", function (event) {
       event.preventDefault();
@@ -112,13 +110,13 @@ const manufactures = document.getElementById("manufactures");
 const logistics = document.getElementById("logistics");
 
 const toggleSort = (el) => {
-  const tabs = [all, suppliers, manufactures, logistics];
+  const tab = [all, suppliers, manufactures, logistics];
 
-  for (let i = 0; i <= tabs.length; i++) {
-    if (tabs[i] === el) {
-      tabs[i].style.backgroundColor = "#fffb98";
+  for (let i = 0; i <= tab.length; i++) {
+    if (tab[i] === el) {
+      tab[i].style.backgroundColor = "#fffb98";
     } else {
-      tabs[i].style.backgroundColor = "";
+      tab[i].style.backgroundColor = "";
     }
   }
 };
