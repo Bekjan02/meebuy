@@ -514,7 +514,7 @@
                   id="history-payment-block"
                   class="rounded-[15px]"
                 >
-                  <table>
+                  <table class="sm:block hidden">
                     <thead>
                       <tr>
                         <th scope="col">ID</th>
@@ -537,10 +537,62 @@
                           />
                         </td>
                       </tr>
+
                       <tr>
                         <td scope="row">123</td>
                         <td>Пополнение баланса</td>
                         <td>27.02.2024</td>
+                        <td>3 000 сом</td>
+                        <td>
+                          <img
+                            src="../../../assets/images/icons/trash.svg"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--  mobile version -->
+                  <table class="sm:hidden flex justify-center">
+                    <thead></thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">ID</th>
+                        <td scope="row">123</td>
+                      </tr>
+                      <tr>
+                        <th>Транзакция</th>
+                        <td>Пополнение баланса</td>
+                      </tr>
+                      <tr>
+                        <th>Дата</th>
+                        <td>27.02.2024</td>
+                      </tr>
+                      <tr class="border-[#A0A0A0] border-b">
+                        <th>Сумма</th>
+                        <td>3 000 сом</td>
+                        <td>
+                          <img
+                            src="../../../assets/images/icons/trash.svg"
+                            alt=""
+                          />
+                        </td>
+                      </tr>
+                      <!-- second list -->
+                      <tr>
+                        <th scope="">ID</th>
+                        <td scope="">123</td>
+                      </tr>
+                      <tr>
+                        <th>Транзакция</th>
+                        <td>Пополнение баланса</td>
+                      </tr>
+                      <tr>
+                        <th>Дата</th>
+                        <td>27.02.2024</td>
+                      </tr>
+                      <tr class="border-[#A0A0A0] border-b">
+                        <th>Сумма</th>
                         <td>3 000 сом</td>
                         <td>
                           <img
