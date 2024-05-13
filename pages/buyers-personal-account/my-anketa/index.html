@@ -14,9 +14,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../profile.css" />
-    <link rel="stylesheet" href="../tenders/index.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="">
@@ -211,35 +211,34 @@
         </div>
       </div>
     </header>
-
-    <div class="bg-[#FFFFFC]">
-      <nav class="breadcrumbs">
-        <div class="container">
-          <div class="">
-            <div class="flex gap-4 py-4">
-              <div class="flex items-center gap-4">
-                <img src="../../../assets/images/icons/home.svg" alt="" />
-                <img src="../../../assets/images/icons/arrow-prev.svg" alt="" />
-              </div>
-              <p class="font-normal font-mulish text-[#A0A0A0]">
-                Личный кабинет
-              </p>
+    <nav class="breadcrumbs bg-[#FFFFFC]">
+      <div class="container">
+        <div class="">
+          <div class="flex gap-4 py-4">
+            <div class="flex items-center gap-4">
+              <img src="../../../assets/images/icons/home.svg" alt="" />
+              <img src="../../../assets/images/icons/arrow-prev.svg" alt="" />
             </div>
+            <p class="font-normal font-mulish text-[#A0A0A0]">Личный кабинет</p>
           </div>
         </div>
-      </nav>
-
-      <main class="container mt-14 pb-28">
-        <h1
-          class="font-black text-dark-logo text-lg mb-12 uppercase text-center sm:text-2xl lg-md:text-3xl xl:text-4xl"
-        >
-          личный кабинет
-        </h1>
-        <!--  this section is for avatar  -->
-
-        <div class="flex gap-[30px] lg-md:flex-row flex-col">
-          <section class="profile__navigate lg-md:w-[25%] bg-[#fff]">
-            <div class="">
+      </div>
+    </nav>
+    <main class="profile-myCompany">
+      <section class="heading">
+        <div class="container">
+          <h1
+            class="font-black text-dark-logo text-lg uppercase text-center sm:text-2xl lg-md:text-3xl xl:text-4xl"
+          >
+            личный кабинет
+          </h1>
+        </div>
+      </section>
+      <div class="container">
+        <div class="lg-md:grid grid-cols-3 lg-md:gap-5 xl:grid-cols-4">
+          <!--  this section is for avatar  -->
+          <section class="main-content mt-[30px] lg-md:mt-[50px]">
+            <div class="container">
               <div class="shadow-card-shadow rounded-[10px] px-5 py-[15px]">
                 <!-- upload avatar-->
                 <div class="upload__avatar text-center flex justify-center">
@@ -278,7 +277,7 @@
                   <button
                     class="dropdown__btn px-2.5 w-full flex items-center justify-between text-dark-text"
                   >
-                    <p class="text-lg font-bold">Статистика</p>
+                    <p class="text-lg font-bold">Моя компания</p>
                     <img
                       class="w-5 h-5"
                       src="../../../assets/images/icons/ios-arrow.svg"
@@ -290,22 +289,22 @@
                   >
                     <li class="dropdown__item">
                       <a href="/pages/profile/purchases/myCompany.html"
-                        >Моя компания</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/purchases/myCompany.html"
                         >Закупки</a
                       >
                     </li>
                     <li class="dropdown__item">
-                      <a href="/pages/profile/purchases/myCompany.html"
+                      <a href="/pages/profile/products/myCompany.html"
                         >Товары</a
                       >
                     </li>
                     <li class="dropdown__item">
                       <a href="/pages/profile/messages/myCompany.html"
                         >Сообщения</a
+                      >
+                    </li>
+                    <li class="dropdown__item">
+                      <a href="/pages/profile/statistics/myCompany.html"
+                        >Статистика</a
                       >
                     </li>
                     <li class="dropdown__item">
@@ -337,9 +336,9 @@
                 <!-- desktop menu-->
                 <div class="hidden lg-md:block">
                   <ul class="flex flex-col">
-                    <li class="dropdown__item">
+                    <li class="dropdown__item active">
                       <a href="/pages/profile/purchases/myCompany.html"
-                        >Моя компания</a
+                        >Моя анкета</a
                       >
                     </li>
                     <li class="dropdown__item">
@@ -357,7 +356,7 @@
                         >Сообщения</a
                       >
                     </li>
-                    <li class="dropdown__item active">
+                    <li class="dropdown__item">
                       <a href="/pages/profile/statistics/myCompany.html"
                         >Статистика</a
                       >
@@ -391,249 +390,574 @@
               </div>
             </div>
           </section>
-
           <!-- these sections are for main content  -->
-          <div
-            id="main-section"
-            style="display: block"
-            class="bg-[#fff] relative"
+          <seciton
+            class="main-content mt-10 mb-28 lg-md:mt-[50px] lg-md:mb-[120px] lg-md:col-span-2 xl:col-span-3"
           >
-            <section class="flex flex-col lg-md:mt-0 mt-10 lg-md:w-[797px]">
-              <div>
-                <div class="scroll-container">
-                  <div
-                    class="flex items-center justify-start gap-5 mb-[30px] lg:w-[797px] lg-md: overflow-x-scroll"
+            <div class="container">
+              <div class="cards grid grid-cols-1 gap-[30px] xl:grid-cols-2">
+                <!--  Анкета  -->
+                <div class="card__item shadow-card-shadow">
+                  <p class="text-[#FF4B4B]">
+                    Анкета компании заполнена некорректно! Корректно заполните
+                    название компании, описание, контактные данные. Затем
+                    подайте на перепроверку.
+                  </p>
+                  <button
+                    class="mt-[26px] btn-filled-yellow w-full uppercase py-2.5"
                   >
-                    <button
-                      id="statistics"
-                      style="background-color: #fffb98"
-                      class="text-[#2B292C] font-mulish font-medium md:text-[18px] text-[15px] py-3 px-5 border-[#FFFB98] border-2 rounded-2xl"
+                    <a href="">Редактировать анкету</a>
+                  </button>
+                  <a
+                    href=""
+                    class="mt-4 border border-[#E4DB00] bg-[#2B292C] text-bg-white rounded-[15px] flex items-center justify-center w-full gap-2.5 py-[13px]"
+                  >
+                    <img
+                      class="w-[23px] h-[23px]"
+                      src="../../../assets/images/icons/premium.svg"
+                      alt=""
+                    />
+                    <span
+                      >Подключить
+                      <span class="uppercase">Premium</span> тариф</span
                     >
-                      Статистика
-                    </button>
-                    <button
-                      id="lifting"
-                      class="text-[#2B292C] font-mulish font-medium md:text-[18px] text-[15px] py-3 px-5 border-[#FFFB98] border-2 rounded-2xl"
-                    >
-                      Поднятие
-                    </button>
-                    <button
-                      id="bannery"
-                      class="text-[#2B292C] font-mulish font-medium md:text-[18px] text-[15px] py-3 px-5 border-[#FFFB98] border-2 rounded-2xl"
-                    >
-                      Баннеры
-                    </button>
-                    <button
-                      id="verification"
-                      class="text-[#2B292C] font-mulish font-medium md:text-[18px] text-[15px] py-3 lg-md:px-3 md: px-3 border-[#FFFB98] border-2 rounded-2xl"
-                    >
-                      Верификация
-                    </button>
-                    <a
-                      id="rates"
-                      class="text-[#2B292C] font-mulish font-medium md:text-[18px] text-[15px] py-3 lg-md:px-3 md: p-3 border-[#FFFB98] border-2 rounded-2xl"
-                      href="../../tariffs/tariffs.html"
-                    >
-                      Тарифы</a
-                    >
+                  </a>
+                </div>
+                <!--  Фотографии  -->
+                <div
+                  class="card__item photos text-dark-text shadow-card-shadow"
+                >
+                  <h2 class="content__title">Фотографии</h2>
+                  <p class="mt-3.5">
+                    На главной странице своей компании Вы можете разместить до 6
+                    фотографий
+                  </p>
+                  <!-- upload 6 photos -->
+                  <div
+                    class="photos__wrapper mt-6 grid grid-cols-[repeat(auto-fill,minmax(96px,96px))] gap-2.5 lg-md:grid-cols-[repeat(auto-fill,minmax(50px,50px))]"
+                  >
+                    <form class="relative">
+                      <label
+                        for="file1"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file1"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview1"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon1"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file2"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file2"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview2"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon2"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file3"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file3"
+                            id="file3"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview3"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon3"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file4"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file4"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview4"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon4"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file5"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file5"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview5"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon5"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file6"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file6"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview6"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon6"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
                   </div>
+                  <!-- advice-->
+                  <p class="relative mt-9 text-dark-logo leading-6">
+                    <img
+                      class="absolute -left-[3px] -top-2.5 -z-[1] rotate-[49.07deg]"
+                      src="../../../assets/images/icons/bg-yellow-icon.svg"
+                      alt=""
+                    />
+                    Совет: выберите самые яркие, качественные фото, чтобы
+                    привлечь больше клиентов
+                  </p>
+                </div>
+                <!--  цены  -->
+                <div class="card__item price text-dark-text shadow-card-shadow">
+                  <h2 class="content__title">Прайс</h2>
+                  <p class="mt-3.5">
+                    Вы можете разместить прайс-листы, файлы, документы на Вашей
+                    странице
+                  </p>
+                  <div
+                    class="photos__wrapper mt-6 grid grid-cols-[repeat(auto-fill,minmax(96px,96px))] gap-2.5 lg-md:grid-cols-[repeat(auto-fill,minmax(50px,50px))]"
+                  >
+                    <form class="relative">
+                      <label
+                        for="file1"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file1"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview1"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon1"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file2"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file2"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview2"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon2"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file3"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file3"
+                            id="file3"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview3"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon3"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file4"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file4"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview4"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon4"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file5"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file5"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview5"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon5"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                    <form class="relative">
+                      <label
+                        for="file6"
+                        class="border-2 overflow-hidden w-full h-24 border-dashed border-[#AEAEAE] rounded-lg flex justify-center items-center lg-md:w-[50px] lg-md:h-[50px]"
+                      >
+                        <div
+                          class="h-full w-full flex justify-center items-center"
+                        >
+                          <input
+                            type="file"
+                            name="file"
+                            id="file6"
+                            class="photos__input sr-only"
+                          />
+                          <!-- Image placeholder that will be replaced or shown when file is chosen -->
+                          <img
+                            src="../../../assets/images/pink-boots.png"
+                            alt=""
+                            class="hidden object-cover h-full w-full"
+                            id="preview6"
+                          />
+                          <!-- Default icon to show before file selection -->
+                          <svg
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="icon6"
+                          >
+                            <path
+                              d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                              fill="#BEBEBE"
+                            />
+                          </svg>
+                        </div>
+                      </label>
+                    </form>
+                  </div>
+                  <div class="uploaded_files flex flex-col gap-2.5 mt-2"></div>
+                  <p class="relative mt-9 text-dark-logo leading-6">
+                    <img
+                      class="absolute -left-[3px] -top-2.5 -z-[1]"
+                      src="../../../assets/images/icons/bg-yellow-icon.svg"
+                      alt=""
+                    />
+                    Вы можете загрузить документы в формате: .pdf, .doc, .xls
+                  </p>
+                </div>
+                <!--  продукты  -->
+                <div
+                  class="card__item products text-dark-text shadow-card-shadow"
+                >
+                  <h2 class="content__title">Продукты</h2>
+                  <p class="mt-3.5">У Вас пока нет товаров</p>
+                  <a
+                    href="/pages/profile/"
+                    class="flex items-center gap-2.5 mt-6 border-2 overflow-hidden w-full py-2 border-dashed border-[#AEAEAE] pl-5 rounded-lg flex items-center"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.71951 14V8.1833H0V5.67413H5.71951V0H8.30894V5.67413H14V8.1833H8.30894V14H5.71951Z"
+                        fill="#BEBEBE"
+                      />
+                    </svg>
+                    Добавить
+                  </a>
                 </div>
               </div>
-
-              <div class="cards shadow-card-shadow rounded-2xl sm:p-9 p-5">
-                <!-- Статистика -->
-                <div id="statistics-block" style="display: block">
-                  <h6 class="text-[#4D4D4D] text-[18px] mb-5 text-center">
-                    Наведите курсор на график, чтобы увидеть данные
-                  </h6>
-                  <div>
-                    <canvas id="myChart"></canvas>
-                  </div>
-
-                  <div class="flex flex-col gap-4 mt-10">
-                    <div class="flex items-center gap-[10px]">
-                      <span
-                        class="h-[30px] w-[30px] bg-[#0407A3] rounded-full"
-                      ></span>
-                      <p>Посетители страницы</p>
-                    </div>
-                    <div class="flex items-center gap-[10px]">
-                      <span
-                        class="h-[30px] w-[30px] bg-[#6713F6] rounded-full"
-                      ></span>
-                      <p>Открытие телефона</p>
-                    </div>
-                    <div class="flex items-center gap-[10px]">
-                      <span
-                        class="h-[30px] w-[30px] bg-[#DDD7E4] rounded-full"
-                      ></span>
-                      <p>Переходы на сайт</p>
-                    </div>
-                    <div class="flex items-center gap-[10px]">
-                      <span
-                        class="h-[30px] w-[30px] bg-[#7E8BE2] rounded-full"
-                      ></span>
-                      <p>Входящие сообщения</p>
-                    </div>
-                    <div class="flex items-center gap-[10px]">
-                      <span
-                        class="h-[30px] w-[30px] bg-[#5EB7F2] rounded-full"
-                      ></span>
-                      <p>Исходящие сообщения</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Поднятие -->
-                <div id="lifting-block" style="display: none">
-                  <div class="flex flex-col gap-7">
-                    <p
-                      class="text-[#4D4D4D] font-mulish font-normal text-[16px]"
-                    >
-                      Поднятие позволяет закрепить вашу компанию вверху списка
-                      (даже выше других компаний с PREMIUM тарифом) на
-                      определенный срок, что позволяет привлечь больше клиентов.
-                      Рекомендуем периодически поднимать компанию или включить
-                      автоподнятие.
-                    </p>
-                    <div class="flex flex-col gap-5">
-                      <div
-                        class="lifting flex flex-col sm:flex-row sm:items-center sm: gap-[28px] w-full justify-between border-b border-[#A0A0A0] pb-4"
-                      >
-                        <p class="sm:block hidden text-[#4D4D4D] text-lg">
-                          Поднятие на 1 сутки
-                        </p>
-                        <span class="sm:block hidden text-[#4D4D4D] text-lg"
-                          >1 000 сом</span
-                        >
-                        <div
-                          class="flex items-center justify-between sm:hidden text-[#4D4D4D] text-lg"
-                        >
-                          <p>Поднятие на 1 сутки</p>
-                          <span>1 000 сом</span>
-                        </div>
-                        <div class="sm:w-[210px] w-full">
-                          <button
-                            class="uppercase text-[#2B292C] text-lg w-full font-semibold py-3 px-7 bg-[#E4DB00] rounded-lg"
-                          >
-                            активировать
-                          </button>
-                        </div>
-                      </div>
-                      <div
-                        class="lifting flex flex-col sm:flex-row sm:items-center sm: gap-[28px] w-full justify-between border-b border-[#A0A0A0] pb-4"
-                      >
-                        <p class="sm:block hidden text-[#4D4D4D] text-lg">
-                          Поднятие на 1 сутки
-                        </p>
-                        <span class="sm:block hidden text-[#4D4D4D] text-lg"
-                          >1 000 сом</span
-                        >
-                        <div
-                          class="flex items-center justify-between sm:hidden text-[#4D4D4D] text-lg"
-                        >
-                          <p>Поднятие на 1 сутки</p>
-                          <span>1 000 сом</span>
-                        </div>
-                        <div class="sm:w-[210px] w-full">
-                          <button
-                            class="uppercase text-[#2B292C] text-lg w-full font-semibold py-3 px-7 bg-[#E4DB00] rounded-lg"
-                          >
-                            активировать
-                          </button>
-                        </div>
-                      </div>
-                      <div
-                        class="lifting flex flex-col sm:flex-row sm:items-center sm: gap-[28px] w-full justify-between border-b border-[#A0A0A0] pb-4"
-                      >
-                        <p class="sm:block hidden text-[#4D4D4D] text-lg">
-                          Поднятие на 1 сутки
-                        </p>
-                        <span class="sm:block hidden text-[#4D4D4D] text-lg"
-                          >1 000 сом</span
-                        >
-                        <div
-                          class="flex items-center justify-between sm:hidden text-[#4D4D4D] text-lg"
-                        >
-                          <p>Поднятие на 1 сутки</p>
-                          <span>1 000 сом</span>
-                        </div>
-                        <div class="sm:w-[210px] w-full">
-                          <button
-                            class="uppercase text-[#2B292C] text-lg w-full font-semibold py-3 px-7 bg-[#E4DB00] rounded-lg"
-                          >
-                            активировать
-                          </button>
-                        </div>
-                      </div>
-                      <div
-                        class="lifting flex flex-col sm:flex-row sm:items-center sm: gap-[28px] w-full justify-between border-b border-[#A0A0A0] pb-4"
-                      >
-                        <p class="sm:block hidden text-[#4D4D4D] text-lg">
-                          Поднятие на 1 сутки
-                        </p>
-                        <span class="sm:block hidden text-[#4D4D4D] text-lg"
-                          >1 000 сом</span
-                        >
-                        <div
-                          class="flex items-center justify-between sm:hidden text-[#4D4D4D] text-lg"
-                        >
-                          <p>Поднятие на 1 сутки</p>
-                          <span>1 000 сом</span>
-                        </div>
-                        <div class="sm:w-[210px] w-full">
-                          <button
-                            class="uppercase text-[#2B292C] text-lg w-full font-semibold py-3 px-7 bg-[#E4DB00] rounded-lg"
-                          >
-                            активировать
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Баннеры -->
-                <div id="bannery-block" style="display: none">
-                  <div class="flex flex-col gap-6 w-full">
-                    <p
-                      class="text-[#4D4D4D] font-mulish font-normal text-start text-[18px]"
-                    >
-                      Баннеры — это наиболее традиционный вид интернет рекламы,
-                      рассчитанный на повышение узнаваемости бренда.
-                      Мы предлагаем баннеры на главной странице (с оплатой
-                      по времени) и внутренних страницах сайта (с оплатой
-                      по показам).
-                    </p>
-                    <div class="">
-                      <button
-                        class="sm:uppercase text-[#2B292C] text-lg font-medium py-3 sm:px-7 px-4 bg-[#E4DB00] rounded-lg"
-                      >
-                        Подробнее о баннерах и ценах
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- Верификация -->
-                <div id="verification-block" style="display: none">
-                  <div class="flex flex-col items-start gap-10 font-mulish">
-                    <p class="text-[#4D4D4D] text-[18px] font-normal">
-                      Для прохождения верификации пришлите сканы/фото документов
-                      о регистрации компании, указанной в реквизитах вашей
-                      анкеты, на адрес ver@optlist.ru
-                    </p>
-                    <p class="text-[#4D4D4D] text-[18px] font-normal">
-                      Письмо должно быть с темой «Верификация», отправлено с
-                      вашего адреса example@gmail.com.
-                    </p>
-                  </div>
-                </div>
-                <!-- Тарифы -->
-              </div>
-            </section>
-          </div>
+            </div>
+          </seciton>
         </div>
-      </main>
-    </div>
-
+      </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="../profile.js"></script>
     <footer class="bg-[#222222]">
       <div class="bg-black py-4">
         <div
@@ -770,15 +1094,5 @@
         </div>
       </div>
     </footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
-      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./index.js"></script>
-    <script src="../tenders/index.js"></script>
-    <script src="../profile.js"></script>
   </body>
 </html>
