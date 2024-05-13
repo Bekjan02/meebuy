@@ -8,8 +8,6 @@ input[type="radio"] {
 /* spacing */
 
 table {
-  table-layout: fixed;
-  width: 100%;
   border-collapse: collapse;
 }
 thead th:nth-child(1) {
@@ -37,7 +35,18 @@ td {
 thead tr {
   text-align: start;
   border-bottom: 1px solid #a0a0a0;
+  padding: 0;
+  margin: 0;
 }
 tbody td {
   text-align: center;
+}
+@media screen and (max-width: 640px) {
+  tr:last-child {
+    border-bottom: none;
+  }
+  td {
+    padding: 0;
+    margin: 0;
+  }
 }
