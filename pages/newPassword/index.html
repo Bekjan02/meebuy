@@ -223,19 +223,39 @@
     </div>
   </div>
 </nav>
+<style>
+    .password-icon::before {
+        background-image: url('../../assets/images/icons/password-close.svg'); /* Иконка для закрытого состояния */
+        opacity: 1;
+    }
+
+    .password-icon::after {
+        background-image: url('/assets/images/icons/password-open.svg'); /* Иконка для открытого состояния */
+        opacity: 0;
+    }
+</style>
 <main>
   <section class="mb-[130px]">
     <div class="container">
-      <h1 class="uppercase font-bold text-center mt-14 lg-md:text-xl lg-md:mt-15">Восстановление пароля</h1>
-      <form class="shadow-card-shadow rounded-[15px] px-5 py-[30px] max-w-[530px] text-[#252B42] mx-auto mt-10 lg-md:p-10" action="">
-        <p>Введите Ваш адрес электронной почты Email.</p>
-        <p>Мы отправим Вам ссылку для восстановления.</p>
-        <input type="email" placeholder="Email *" required>
-        <button class="btn-filled-yellow uppercase w-full py-5 mt-[30px]">восстановить пароль</button>
+      <h1 class="uppercase font-bold text-center mt-14 lg-md:text-xl lg-md:mt-15">установка нового пароля</h1>
+      <form
+        class="shadow-card-shadow rounded-[15px] px-5 py-[30px] max-w-[530px] text-[#252B42] mx-auto mt-10 lg-md:p-10"
+        action="">
+        <p class="lg-md:text-lg">Введите новый пароль для <span class="font-semibold">example@gmail.com</span></p>
+        <div class="relative mt-5">
+          <input id="password" type="password" class="form-input px-4 py-3 w-full" placeholder="Введите новый пароль"
+                 required>
+          <label for="toggle-password" class="cursor-pointer absolute top-1/2 right-4 -translate-y-1/2">
+            <input type="checkbox" id="toggle-password" class="hidden" />
+            <span class="password-icon" id="togglePassword" aria-hidden="true"></span>
+          </label>
+        </div>
+        <button class="btn-filled-yellow uppercase w-full py-5 mt-[30px]">Сохранить</button>
       </form>
     </div>
   </section>
 </main>
+<script src="./index.js"></script>
 <footer class="bg-[#222222]">
   <div class="bg-black py-4">
     <div
@@ -372,6 +392,5 @@
     </div>
   </div>
 </footer>
-<script src="./tariffs.js"></script>
 </body>
 </html>
