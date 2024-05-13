@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Личный кабинет</title>
-    <link rel="stylesheet" href="../../../styles.css" />
+    <title>Products</title>
+    <link rel="stylesheet" href="../../styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -13,12 +13,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../../profile/profile.css" />
-    <link rel="stylesheet" href="../../profile/tenders/index.css" />
-    <link rel="stylesheet" href="./provider.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
-
-  <body>
+  <!-- привет, Это страница когда юзер хочет отправить сообщение, но он еще не зарегана  -->
+  <body class="products relative bg-[#FFFFFC]">
     <header class="header">
       <div class="">
         <!-- top header -->
@@ -27,12 +25,12 @@
             class="container flex justify-between lg-md:items-center lg-md:gap-[27px]"
           >
             <a href="/pages/home/home.html"
-              ><img src="../../../assets/images/icons/logo.svg" alt="Meebuy"
+              ><img src="../../assets/images/icons/logo.svg" alt="Meebuy"
             /></a>
             <img
               class="lg-md:hidden"
               id="burgerIcon"
-              src="../../../assets/images/icons/burger-menu.svg"
+              src="../../assets/images/icons/burger-menu.svg"
               alt="Burger Menu"
             />
             <form
@@ -41,7 +39,7 @@
               <div class="relative">
                 <div class="absolute inset-y-0 end-0 flex items-center pe-2">
                   <img
-                    src="../../../assets/images/icons/search.svg"
+                    src="../../assets/images/icons/search.svg"
                     alt="Search icon"
                   />
                 </div>
@@ -87,7 +85,7 @@
 
               <img
                 class="lg-md:block"
-                src="../../../assets/images/icons/bell.svg"
+                src="../../assets/images/icons/bell.svg"
                 alt=""
               />
             </div>
@@ -103,7 +101,7 @@
               <div class="absolute inset-y-0 start-0 flex items-center ps-3">
                 <img
                   id="searchIconImg"
-                  src="../../../assets/images/icons/search.svg"
+                  src="../../assets/images/icons/search.svg"
                   alt="Search icon"
                 />
               </div>
@@ -142,7 +140,7 @@
         <!-- close icon -->
         <img
           class="absolute top-[18px] right-5"
-          src="../../../assets/images/icons/close.svg"
+          src="../../assets/images/icons/close.svg"
           alt="Close"
           id="closeIcon"
         />
@@ -206,7 +204,7 @@
           </div>
           <img
             class="absolute bottom-0 left-1/2 -translate-x-1/2"
-            src="../../../assets/images/icons/meebuy.svg"
+            src="../../assets/images/icons/meebuy.svg"
             alt="Meebuy"
           />
         </div>
@@ -217,219 +215,116 @@
         <div class="">
           <div class="flex gap-4 py-4">
             <div class="flex items-center gap-4">
-              <img src="../../../assets/images/icons/home.svg" alt="" />
-              <img src="../../../assets/images/icons/arrow-prev.svg" alt="" />
+              <img src="../../assets/images/icons/home.svg" alt="" />
+              <img src="../../assets/images/icons/arrow-prev.svg" alt="" />
             </div>
-            <p class="font-normal font-mulish text-[#A0A0A0]">Личный кабинет</p>
+            <p class="font-normal font-mulish text-[#A0A0A0]">
+               Отправка сообщения
+            </p>
           </div>
         </div>
       </div>
     </nav>
-    <main class="profile-myCompany">
-      <div class="container my-16">
-        <div
-          class="flex lg-md:flex-row flex-col gap-7 lg-md:items-start items-center"
+
+    <div class="container mt-10 mb-20">
+      <div class="flex flex-col w-full gap-10">
+        <h1
+          class="text-[#2B292C] sm:text-[36px] text-[20px] font-black text-center uppercase"
         >
-          <!--  this section is for avatar  -->
-          <section class="profile__navigate w-[278px]">
-            <div class="container">
-              <div class="shadow-card-shadow rounded-[10px] px-5 py-[15px]">
-                <!-- upload avatar-->
-                <div class="upload__avatar text-center flex justify-center">
-                  <div class="relative">
-                    <img
-                      class="absolute right-0 bottom-0"
-                      src="../../../assets/images/icons/camera-outline.svg"
-                      alt=""
-                    />
-                    <form
-                      class="rounded-full overflow-hidden w-20 h-20"
-                      action=""
-                    >
-                      <label
-                        for="upload"
-                        class="h-full flex-col items-center gap-2 cursor-pointer"
-                      >
-                        <img
-                          class="object-cover h-full"
-                          id="avatar"
-                          src="../../../assets/images/icons/Avatar.svg"
-                          alt=""
-                        />
-                      </label>
-                      <input id="upload" type="file" class="hidden" />
-                    </form>
-                  </div>
-                </div>
-                <h2 class="text-center text-lg font-semibold mt-2.5">
-                  Асанов Асан
-                </h2>
-                <!-- dropdown menu-->
-                <div
-                  class="dropdown mt-[30px] px-2.5 py-[15px] btn-outlined border-[#A0A0A080] hover:bg-transparent lg-md:hidden"
-                >
-                  <button
-                    class="dropdown__btn px-2.5 w-full flex items-center justify-between text-dark-text"
-                  >
-                    <p class="text-lg font-bold">Моя компания</p>
-                    <img
-                      class="w-5 h-5"
-                      src="../../../assets/images/icons/ios-arrow.svg"
-                      alt=""
-                    />
-                  </button>
-                  <ul
-                    class="dropdown__menu h-0 text-dark-text overflow-hidden transition-all duration-300 ease-in text-lg"
-                  >
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/purchases/myCompany.html"
-                        >Закупки</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/products/myCompany.html"
-                        >Товары</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/messages/myCompany.html"
-                        >Сообщения</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/statistics/myCompany.html"
-                        >Статистика</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/premiumRates/myCompany.html"
-                        >Premium тарифы</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/settings/myCompany.html"
-                        >Настройки аккаунта</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/balance/myCompany.html">Баланс</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/favorites/myCompany.html"
-                        >Избранные</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/supportService/myCompany.html"
-                        >Служба поддержки</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <!-- dropdown menu end-->
-                <!-- desktop menu-->
-                <div class="hidden lg-md:block">
-                  <ul class="flex flex-col">
-                    <li class="dropdown__item active">
-                      <a href="/pages/profile/purchases/myCompany.html"
-                        >Моя компания</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/purchases/myCompany.html"
-                        >Закупки</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/products/myCompany.html"
-                        >Товары</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/messages/myCompany.html"
-                        >Сообщения</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/statistics/myCompany.html"
-                        >Статистика</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/premiumRates/myCompany.html"
-                        >Premium тарифы</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/settings/myCompany.html"
-                        >Настройки аккаунта</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/balance/myCompany.html">Баланс</a>
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/favorites/myCompany.html"
-                        >Избранные</a
-                      >
-                    </li>
-                    <li class="dropdown__item">
-                      <a href="/pages/profile/supportService/myCompany.html"
-                        >Служба поддержки</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <!-- desktop menu end-->
-              </div>
+           Отправка сообщения
+        </h1>
+        <div
+          class="shadow-card-shadow bg-[#FFFFFF] flex flex-col gap-5 sm:p-10 p-4 rounded-2xl md:w-[50%] mx-auto"
+        >
+          <div class="flex items-center gap-[15px]">
+            <img src="../../assets/images/icons/prev-arrow.svg" alt="" />
+            <span class="font-semibold text-[#2B292C]">Headphones.kg</span>
+          </div>
+          <hr class="h-[2px] bg-[#A0A0A0] w-full" />
+
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4">
+              <h6 class="text-[#2B292C] text-[18px] font-semibold">
+                Ваше сообщение
+              </h6>
+              <textarea
+                placeholder="Например: Здравствуйте, интересуют наушники оптом"
+                class="border border-[#E6E6E6] bg-[#F9F9F9] outline-none rounded-[15px] w-full px-5 py-3"
+                rows="3"
+              ></textarea>
             </div>
-          </section>
-          <div
-            class="cards flex flex-col justify-center text-center gap-9 py-16 px-20 rounded-[15px]"
-          >
-            <p class="text-[#4D4D4D] font-bold font-mulish text-xl">
-              Какая основная цель регистрации на сайте?
-            </p>
-            <div class="flex sm:flex-row flex-col sm:items-center gap-7">
-              <div
-                class="flex items-center justify-center lg:gap-3 gap-2 bg-[#E4DB00] rounded-[7px] py-3 lg-md:px-9 px-3"
-              >
-                <img src="../../../assets/images/icons/cruise.svg" alt="" />
-                <button
-                  class="text-[#2B292C] lg-md:uppercase lg-md:text-[14px] text-[16px] font-mulish"
-                >
-                  Продать товары оптом
-                </button>
-              </div>
-              <div
-                class="flex items-center justify-center lg:gap-3 gap-2 bg-[#E4DB00] rounded-[7px] py-[14px] lg-md:px-9 px-3"
-              >
-                <img src="../../../assets/images/icons/basket.svg" alt="" />
-                <button
-                  class="text-[#2B292C] lg-md:uppercase lg-md:text-[14px] text-[16px] font-mulish"
-                >
-                  Купить товары оптом
-                </button>
-              </div>
+            <div class="flex flex-col gap-4">
+              <h6 class="text-[#2B292C] text-[18px] font-semibold">Ваше ФИО</h6>
+              <input
+                placeholder="Как к Вам обращаться"
+                class="border border-[#E6E6E6] bg-[#F9F9F9] outline-none rounded-[15px] w-full px-5 py-3"
+                rows="3"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h6 class="text-[#2B292C] text-[18px] font-semibold">
+                Ваш номер телефона
+              </h6>
+              <input
+                placeholder="+996 XXX XXX XXX"
+                class="border border-[#E6E6E6] bg-[#F9F9F9] outline-none rounded-[15px] w-full px-5 py-3"
+                rows="3"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h6 class="text-[#2B292C] text-[18px] font-semibold">
+                Ваш e-mail
+              </h6>
+              <input
+                placeholder="example@gmail.com"
+                class="border border-[#E6E6E6] bg-[#F9F9F9] outline-none rounded-[15px] w-full px-5 py-3"
+                rows="3"
+              />
             </div>
           </div>
+          <!-- radio -->
+          <div class="flex flex-col gap-3">
+            <p class="text-[18px] text-[#2B292C] font-semibold">
+              Основная цель регистрации на сайте
+            </p>
+            <div class="flex items-center gap-[10px]">
+              <input class="h-6 w-6" type="radio" />
+              <p>Компания или ИП</p>
+            </div>
+            <div class="flex items-center gap-[10px]">
+              <input class="h-6 w-6" type="radio" />
+              <p>Частное лицо</p>
+            </div>
+          </div>
+          <!-- confirm -->
+          <div class="flex items-center gap-[10px] mt-2">
+            <input class="h-6 w-6" type="checkbox" />
+            <p class="text-[#777777] text-[16px] font-normal">
+              Я ознакомился и согласен с условиями
+              <a href="#" class="underline"> Политики</a>
+            </p>
+          </div>
+          <!-- button -->
+          <button
+            class="font-medium text-[#2B292C] uppercase py-4 rounded-lg w-full bg-[#E4DB00] mt-6"
+          >
+            отправить
+          </button>
         </div>
       </div>
-    </main>
-    <script src="../../profile/tenders/index.js"></script>
-    <script src="../../profile/profile.js"></script>
+    </div>
     <footer class="bg-[#222222]">
       <div class="bg-black py-4">
         <div
           class="container flex justify-between lg-md:items-center lg-md:gap-[27px]"
         >
           <a href="/pages/home/home.html"
-            ><img src="../../../assets/images/icons/logo.svg" alt="Meebuy"
+            ><img src="../../assets/images/icons/logo.svg" alt="Meebuy"
           /></a>
           <img
             class="lg-md:hidden"
             id="burgerIcon"
-            src="../../../assets/images/icons/burger-menu.svg"
+            src="../../assets/images/icons/burger-menu.svg"
             alt="Burger Menu"
           />
           <form
@@ -438,7 +333,7 @@
             <div class="relative">
               <div class="absolute inset-y-0 end-0 flex items-center pe-2">
                 <img
-                  src="../../../assets/images/icons/search.svg"
+                  src="../../assets/images/icons/search.svg"
                   alt="Search icon"
                 />
               </div>
@@ -484,7 +379,7 @@
 
             <img
               class="lg-md:block"
-              src="../../../assets/images/icons/bell.svg"
+              src="../../assets/images/icons/bell.svg"
               alt=""
             />
           </div>
@@ -499,25 +394,25 @@
             <ul class="flex gap-3">
               <li>
                 <img
-                  src="../../../assets/images/icons/footer/socials/instagram.svg"
+                  src="../../assets/images/icons/footer/socials/instagram.svg"
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="../../../assets/images/icons/footer/socials/whatsapp.svg"
+                  src="../../assets/images/icons/footer/socials/whatsapp.svg"
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="../../../assets/images/icons/footer/socials/telegram.svg"
+                  src="../../assets/images/icons/footer/socials/telegram.svg"
                   alt=""
                 />
               </li>
               <li>
                 <img
-                  src="../../../assets/images/icons/footer/socials/wk.svg"
+                  src="../../assets/images/icons/footer/socials/wk.svg"
                   alt=""
                 />
               </li>
@@ -554,5 +449,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
