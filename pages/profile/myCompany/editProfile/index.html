@@ -277,25 +277,24 @@
                 <div class="form__item">
                   <label class="label">Основная цель регистрации на сайте</label>
                   <div class="mt-6 space-y-4">
-                    <label for="checkboxLabelFour"
-                           class="flex items-center cursor-pointer select-none text-dark">
+                    <label for="checkboxLabelFour" class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
-                        <input type="radio" id="checkboxLabelFour" name="tet"
-                               class="sr-only peer" />
+                        <input type="radio" id="checkboxLabelFour" name="tet" class="sr-only peer radioInput" />
                         <div
-                          class="flex items-center justify-center w-5 h-5 mr-4 peer-checked:[&:not(:checked)]:border-gray-300]  peer-checked: border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent  peer-checked:bg-black"></span>
+                          class="flex items-center justify-center w-5 h-5 mr-4 border border-gray-300 rounded-full">
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent"></span>
                         </div>
                       </div>
                       Продавать товары оптом
                     </label>
+
                     <label for="checkboxLabelFour2"
                            class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
                         <input type="radio" id="checkboxLabelFour2" name="tet"
-                               class="sr-only peer" />
+                               class="sr-only peer radioInput" />
                         <div class="flex items-center justify-center w-5 h-5 mr-4 border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent peer-checked:bg-black"></span>
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent "></span>
                         </div>
                       </div>
                       Покупать товары оптом
@@ -306,29 +305,34 @@
                 <div class="form__item">
                   <label class="label">Объем закупок</label>
                   <div class="mt-6 space-y-4">
-                    <label for=""
+                    <label for="quantity"
                            class="flex items-center gap-2.5 cursor-pointer select-none text-dark">
-                      <input type="checkbox" name="tet" class="w-[25px] h-[25px] text-base" />
+                      <input type="checkbox" name="quantity" id="quantity" class="sr-only checkboxInput" />
+                      <span class="checkmark w-[25px] h-[25px] border border-black relative"></span>
                       Крупный опт
                     </label>
-                    <label for=""
+                    <label for="quantity2"
                            class="flex items-center gap-2.5 cursor-pointer select-none text-dark">
-                      <input type="checkbox" name="tet" class="w-[25px] h-[25px] text-base" />
+                      <input type="checkbox" name="quantity" id="quantity2" class="sr-only checkboxInput" />
+                      <span class="checkmark w-[25px] h-[25px] border border-black relative"></span>
                       Мелкий опт
                     </label>
-                    <label for=""
+                    <label for="quantity3"
                            class="flex items-center gap-2.5 cursor-pointer select-none text-dark">
-                      <input type="checkbox" name="tet" class="w-[25px] h-[25px] text-base" />
+                      <input type="checkbox" name="quantity" id="quantity3" class="sr-only checkboxInput" />
+                      <span class="checkmark w-[25px] h-[25px] border border-black relative"></span>
                       Единичные покупки
                     </label>
-                    <label for=""
+                    <label for="quantity4"
                            class="flex items-center gap-2.5 cursor-pointer select-none text-dark">
-                      <input type="checkbox" name="tet" class="w-[25px] h-[25px] text-base" />
+                      <input type="checkbox" name="quantity" id="quantity4" class="sr-only checkboxInput" />
+                      <span class="checkmark w-[25px] h-[25px] border border-black relative"></span>
                       Под реализацию
                     </label>
-                    <label for=""
+                    <label for="quantity5"
                            class="flex items-center gap-2.5 cursor-pointer select-none text-dark">
-                      <input type="checkbox" name="tet" class="w-[25px] h-[25px] text-base" />
+                      <input type="checkbox" name="quantity" id="quantity5" class="sr-only checkboxInput" />
+                      <span class="checkmark w-[25px] h-[25px] border border-black relative"></span>
                       Дропшиппинг
                     </label>
                   </div>
@@ -336,13 +340,13 @@
                 <div class="form__item">
                   <label class="label">Уровень приватности</label>
                   <div class="mt-6 space-y-4">
-                    <label for="checkboxLabelFour"
+                    <label for="privateLevel1"
                            class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
-                        <input type="radio" name="tet" class="sr-only peer" />
+                        <input type="radio" id="privateLevel1" name="privateLevel" class="sr-only peer radioInput" />
                         <div
-                          class="flex items-center justify-center w-5 h-5 mr-4 peer-checked:[&:not(:checked)]:border-gray-300]  peer-checked: border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent  peer-checked:bg-black"></span>
+                          class="flex items-center justify-center w-5 h-5 mr-4    border border-gray-300 rounded-full">
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent  "></span>
                         </div>
                       </div>
                       <div class="flex flex-col">
@@ -351,12 +355,12 @@
                           посетителям)</p>
                       </div>
                     </label>
-                    <label for="checkboxLabelFour2"
+                    <label for="privateLevel2"
                            class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
-                        <input type="radio" name="tet" class="sr-only peer" />
+                        <input type="radio" id="privateLevel2" name="privateLevel" class="sr-only peer radioInput" />
                         <div class="flex items-center justify-center w-5 h-5 mr-4 border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent peer-checked:bg-black"></span>
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent "></span>
                         </div>
                       </div>
                       <div class="flex flex-col">
@@ -371,33 +375,33 @@
                 <div class="form__item">
                   <label class="label">Основная деятельность вашей компании</label>
                   <div class="mt-6 space-y-4">
-                    <label for="checkboxLabelFour"
+                    <label for="mainActivity"
                            class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
-                        <input type="radio" id="" name="tet" class="sr-only peer" />
+                        <input type="radio" id="mainActivity" name="mainActivity" class="sr-only peer radioInput" />
                         <div
-                          class="flex items-center justify-center w-5 h-5 mr-4 peer-checked:[&:not(:checked)]:border-gray-300]  peer-checked: border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent  peer-checked:bg-black"></span>
+                          class="flex items-center justify-center w-5 h-5 mr-4    border border-gray-300 rounded-full">
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent  "></span>
                         </div>
                       </div>
                       Оптовая продажа товаров (вы поставщик)
                     </label>
-                    <label for="checkboxLabelFour2"
+                    <label for="mainActivity2"
                            class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
-                        <input type="radio" id="" name="tet" class="sr-only peer" />
+                        <input type="radio" id="mainActivity2" name="mainActivity" class="sr-only peer radioInput" />
                         <div class="flex items-center justify-center w-5 h-5 mr-4 border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent peer-checked:bg-black"></span>
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent "></span>
                         </div>
                       </div>
                       Производство товаров (вы производитель)
                     </label>
-                    <label for="checkboxLabelFour2"
+                    <label for="mainActivity3"
                            class="flex items-center cursor-pointer select-none text-dark">
                       <div class="relative">
-                        <input type="radio" id="" name="tet" class="sr-only peer" />
+                        <input type="radio" id="mainActivity3" name="mainActivity" class="sr-only peer radioInput" />
                         <div class="flex items-center justify-center w-5 h-5 mr-4 border border-gray-300 rounded-full">
-                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent peer-checked:bg-black"></span>
+                          <span class="dot h-2.5 w-2.5 rounded-full bg-transparent "></span>
                         </div>
                       </div>
                       Оказание услуг логистики / поиска товаров / таможенного оформления
@@ -418,7 +422,7 @@
                   <textarea class="mt-6" placeholder="Например: наушники оптом" name="keyWords"
                             cols="30"></textarea>
                 </div>
-                <div class="form__item pl-10 pl-9 pl-11 pl-12 pl-13">
+                <div class="form__item">
                   <label class="label">Категории</label>
                   <input type="text" placeholder="Поиск в категории" id="categorySearch">
                   <!--  Отрисовка категорий и под категорий-->
