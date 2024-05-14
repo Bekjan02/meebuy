@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../tenders/index.css" />
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
+  <body class="relative">
     <header class="header">
       <div class="">
         <!-- top header -->
@@ -459,6 +459,7 @@
                       Выберите способ оплаты
                     </h6>
                     <div
+                      id="mbank"
                       class="flex justify-between items-center cards py-[5px] px-[10px] rounded-[5px] lg-md:w-[45%] w-full"
                     >
                       <div class="flex items-center gap-[10px]">
@@ -471,6 +472,7 @@
                       <img src="../../../assets/images/icons/next.svg" alt="" />
                     </div>
                     <div
+                      id="o-dengi"
                       class="flex justify-between items-center cards py-[5px] px-[10px] rounded-[5px] lg-md:w-[45%] w-full"
                     >
                       <div class="flex items-center gap-[10px] w-[45%]">
@@ -483,6 +485,7 @@
                       <img src="../../../assets/images/icons/next.svg" alt="" />
                     </div>
                     <div
+                      id="balance"
                       class="flex justify-between items-center cards py-[5px] px-[10px] rounded-[5px] lg-md:w-[45%] w-full"
                     >
                       <div class="flex items-center gap-[10px] w-[45%]">
@@ -495,6 +498,7 @@
                       <img src="../../../assets/images/icons/next.svg" alt="" />
                     </div>
                     <div
+                      id="pay24"
                       class="flex justify-between items-center cards py-[5px] px-[10px] rounded-[5px] lg-md:w-[45%] w-full"
                     >
                       <div class="flex items-center gap-[10px] w-[45%]">
@@ -505,6 +509,87 @@
                         <p class="text-[#636363]">Pay24</p>
                       </div>
                       <img src="../../../assets/images/icons/next.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <!-- confirm tarif -->
+                  <div
+                    id="open-modal"
+                    style="display: none"
+                    class="confirm_tarif_modal"
+                  >
+                    <div
+                      class="absolute md:top-[230px] top-[500px] lg-md:left-[400px] md:left-[240px] sm:left[160px] left-[40px] sm:w-[50%] w-[80%] bg-[#fff] rounded-[15px] sm:pt-6 pt-5 sm:pb-16 pb-5 sm:px-10 px-6"
+                    >
+                      <div class="confirm-modal">
+                        <div id="close_confirm" class="flex justify-end">
+                          <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.9974 29.3327C23.3612 29.3327 29.3307 23.3631 29.3307 15.9993C29.3307 8.63555 23.3612 2.66602 15.9974 2.66602C8.6336 2.66602 2.66406 8.63555 2.66406 15.9993C2.66406 23.3631 8.6336 29.3327 15.9974 29.3327Z"
+                              stroke="#A0A0A0"
+                              stroke-width="2.66667"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M20 12L12 20"
+                              stroke="#A0A0A0"
+                              stroke-width="2.66667"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M12 12L20 20"
+                              stroke="#A0A0A0"
+                              stroke-width="2.66667"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <h6
+                          class="uppercase text-[#2B292C] font-mulish text-[20px] font-bold text-center my-7"
+                        >
+                          Вы выбрали тариф
+                        </h6>
+                        <div class="flex flex-col gap-7 items-center">
+                          <img
+                            class="w-6 h-6"
+                            src="../../../assets/images/icons/diomend.svg"
+                            alt=""
+                          />
+                          <div
+                            class="uppercase text-[#2B292C] text-center font-black text-[26px] w-[126px]"
+                          >
+                            premium lite
+                          </div>
+                          <div
+                            id="buttons"
+                            style="display: flex"
+                            class="flex-col gap-4 transition-all duration-500"
+                          >
+                            <button
+                              id="connect-tarif-button"
+                              class="bg-[#E4DB00] rounded-[7px] uppercase py-3 sm:px-12 px-2 text-[#2B292C] text-[16px] font-mulish"
+                            >
+                              подключить
+                            </button>
+                            <button
+                              class="border border-[#2B292C] uppercase rounded-[7px] py-3 sm:px-12 px-2 text-[#2B292C] text-[16px] font-mulish"
+                            >
+                              <a href="../../tariffs/tariffs.html">
+                                выбрать другой тариф</a
+                              >
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
