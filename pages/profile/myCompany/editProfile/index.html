@@ -128,7 +128,6 @@
     </div>
   </div>
 </header>
-
 <main class="edit__profile">
   <nav class="breadcrumbs bg-[#FFFFFC]">
     <div class="container">
@@ -264,16 +263,16 @@
               ненадлежащим образом или в тексте содержатся ошибки, анкета может быть заблокирована.
             </p>
             <div class="form mt-[30px]">
-              <form class="space-y-[30px]">
+              <form id="form" class="space-y-[30px]">
                 <div class="form__item">
                   <label class="label" for="name">Общеизвестное название компании / бренда *</label>
                   <p class="tooltip">Без кавычек. Например: Headphones</p>
-                  <input id="name" type="text" placeholder="Headphones.kg">
+                  <input id="name" name="name" type="text" placeholder="Headphones.kg">
                 </div>
                 <div class="form__item">
                   <label for="description">Краткое описание *</label>
                   <p class="tooltip">Например: наушники оптом</p>
-                  <input id="description" type="text" placeholder="Например: наушники оптом">
+                  <input id="description" name="description" type="text" placeholder="Например: наушники оптом">
                 </div>
                 <div class="form__item">
                   <label class="label">Основная цель регистрации на сайте</label>
@@ -408,7 +407,7 @@
                 <div class="form__item">
                   <label class="label">Описание</label>
                   <p class="tooltip">Опишите деятельность вашей компании, товары и услуги</p>
-                  <textarea class="mt-6" placeholder="Например: наушники оптом" name=""
+                  <textarea class="mt-6" placeholder="Например: наушники оптом" name="descriptionTest"
                             cols="30"></textarea>
                 </div>
                 <div class="form__item">
@@ -416,67 +415,26 @@
                   <p class="tooltip">Введите через запятую ключевые слова и синонимы по которым будут
                     искать вашу компанию.Например: Мебель для дома, диваны, стулья, кресло, комод,
                     стол</p>
-                  <textarea class="mt-6" placeholder="Например: наушники оптом" name=""
+                  <textarea class="mt-6" placeholder="Например: наушники оптом" name="keyWords"
                             cols="30"></textarea>
                 </div>
-                <div class="form__item">
+                <div class="form__item pl-10 pl-9 pl-11 pl-12 pl-13">
                   <label class="label">Категории</label>
-                  <input type="text" placeholder="Поиск в категории">
-                  <div class="divide-y divide-grey-light space-y-[15px]">
-                    <div class="flex items-center gap-2.5 pt-[15px] text-dark-logo">
-                      <div
-                        class="flex justify-center items-center p-2.5 rounded-full bg-logo-color w-[37px] h-[37px] lg-md:w-12 lg-md:h-12">
-                        <img src="/assets/images/icons/category/t-shirt.svg" alt=""></div>
-                      Одежда, обувь и аксессуары
-                      <img src="/assets/images/icons/ios-arrow.svg" alt="">
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-[15px] text-dark-logo">
-                      <div
-                        class="flex justify-center items-center p-2.5 rounded-full bg-logo-color w-[37px] h-[37px] lg-md:w-12 lg-md:h-12">
-                        <img src="/assets/images/icons/category/t-shirt.svg" alt=""></div>
-                      Одежда, обувь и аксессуары
-                      <img src="/assets/images/icons/ios-arrow.svg" alt="">
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-[15px] text-dark-logo">
-                      <div
-                        class="flex justify-center items-center p-2.5 rounded-full bg-logo-color w-[37px] h-[37px] lg-md:w-12 lg-md:h-12">
-                        <img src="/assets/images/icons/category/t-shirt.svg" alt=""></div>
-                      Одежда, обувь и аксессуары
-                      <img src="/assets/images/icons/ios-arrow.svg" alt="">
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-[15px] text-dark-logo">
-                      <div
-                        class="flex justify-center items-center p-2.5 rounded-full bg-logo-color w-[37px] h-[37px] lg-md:w-12 lg-md:h-12">
-                        <img src="/assets/images/icons/category/t-shirt.svg" alt=""></div>
-                      Одежда, обувь и аксессуары
-                      <img src="/assets/images/icons/ios-arrow.svg" alt="">
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-[15px] text-dark-logo">
-                      <div
-                        class="flex justify-center items-center p-2.5 rounded-full bg-logo-color w-[37px] h-[37px] lg-md:w-12 lg-md:h-12">
-                        <img src="/assets/images/icons/category/t-shirt.svg" alt=""></div>
-                      Одежда, обувь и аксессуары
-                      <img src="/assets/images/icons/ios-arrow.svg" alt="">
-                    </div>
-                    <div class="flex items-center gap-2.5 pt-[15px] text-dark-logo">
-                      <div
-                        class="flex justify-center items-center p-2.5 rounded-full bg-logo-color w-[37px] h-[37px] lg-md:w-12 lg-md:h-12">
-                        <img src="/assets/images/icons/category/t-shirt.svg" alt=""></div>
-                      Одежда, обувь и аксессуары
-                      <img src="/assets/images/icons/ios-arrow.svg" alt="">
-                    </div>
-                  </div>
+                  <input type="text" placeholder="Поиск в категории" id="categorySearch">
+                  <!--  Отрисовка категорий и под категорий-->
+                  <input type="hidden" id="selectedCategory" name="selectedCategory">
+                  <div id="treeWrapper" class="divide-y divide-grey-light space-y-[15px]"></div>
                 </div>
                 <!--  крч если это не первая регистрация, то все что ниже находится нужно удалить  -->
                 <div class="form__item">
                   <label class="label">Город</label>
                   <p class="tooltip">Для выбора города начните вводить название в поле ниже</p>
-                  <input type="text" placeholder="Например: наушники оптом">
+                  <input type="text" placeholder="Например: наушники оптом" name="city">
                 </div>
                 <div class="form__item">
                   <label class="label">Почтовый индекс</label>
                   <p class="tooltip">Для выбора города начните вводить название в поле ниже</p>
-                  <input type="text" placeholder="Например: наушники оптом">
+                  <input type="text" placeholder="Например: наушники оптом" name="postalCode">
                 </div>
                 <div class="form__item">
                   <label class="label">Улица, дом</label>
@@ -542,7 +500,9 @@
                   <input type="text" placeholder="Например: наушники оптом">
                 </div>
                 <div class="flex items-center gap-4">
-                  <button class="btn-filled-yellow flex-grow py-5 uppercase">Сохранить</button>
+                  <button id="submitBtn" type="submit"
+                          class="btn-filled-yellow flex-grow py-5 uppercase">Сохранить
+                  </button>
                   <button class="btn-outlined flex-grow py-5 uppercase">Отмена</button>
                 </div>
               </form>
@@ -554,7 +514,7 @@
   </div>
 </main>
 <script src="./index.js"></script>
-<script src="../profile.js"></script>
+<script src="../../profile.js"></script>
 <footer class="bg-[#222222]">
   <div class="bg-black py-4">
     <div class="container flex justify-between lg-md:items-center lg-md:gap-[27px]">
