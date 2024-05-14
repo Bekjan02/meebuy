@@ -22,3 +22,33 @@ replenishment.addEventListener("click", () => toggleTabBalance(replenishment));
 historyPayment.addEventListener("click", () =>
   toggleTabBalance(historyPayment)
 );
+
+// open confirm tarif modal
+const mbank = document.getElementById("mbank");
+const odengi = document.getElementById("o-dengi");
+const balance = document.getElementById("balance");
+const pay24 = document.getElementById("pay24");
+const openModal = document.getElementById("open-modal");
+
+const buttons = document.getElementById("buttons");
+
+const connectTarifButton = document.getElementById("connect-tarif-button");
+const closeModal = document.getElementById("close_confirm");
+
+const toggleConfirmModal = () => {
+  openModal.style.display =
+    openModal.style.display === "none" ? "block" : "none";
+};
+const toggleCloseConfirmModal = () => {
+  openModal.style.display = "none";
+};
+const toggleConnectTarif = () => {
+  buttons.style.display = "none";
+};
+
+mbank.addEventListener("click", toggleConfirmModal);
+odengi.addEventListener("click", toggleConfirmModal);
+balance.addEventListener("click", toggleConfirmModal);
+pay24.addEventListener("click", toggleConfirmModal);
+connectTarifButton.addEventListener("click", toggleConnectTarif);
+closeModal.addEventListener("click", toggleCloseConfirmModal);
