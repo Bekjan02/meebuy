@@ -31,3 +31,23 @@
         margin-top: 26px;
     }
 }
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+span.active {
+    color: #008000;
+}
+
+.tree__item--parent img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.tree__item-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
