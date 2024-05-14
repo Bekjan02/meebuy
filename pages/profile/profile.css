@@ -48,8 +48,8 @@
 }
 
 /*  form  */
-
 .form input[type="text"],
+.edit__profile input[type="tel"],
 .form textarea {
     width: 100%;
     border: 1px solid #E6E6E6;

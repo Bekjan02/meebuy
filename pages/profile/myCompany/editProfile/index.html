@@ -458,8 +458,14 @@
                 <div class="form__item">
                   <label class="label">Телефоны</label>
                   <p class="tooltip">Для выбора города начните вводить название в поле ниже</p>
-                  <input type="text" placeholder="Например: наушники оптом">
-                  <button class="btn btn-outlined py-4 px-[31px] border-[#2B292C] text-[#6E6E6E] mt-6 lg-md:mt-[26px]">
+                  <div class="numberInputs">
+                    <div class="flex justify-between items-center pr-7 relative">
+                      <input class="numbers" type="tel" name="phoneNumber" placeholder="Например: наушники оптом">
+                      <img class="deletePhoneInput absolute top-[60%] right-0 -translate-y-1/2 cursor-pointer" src="/assets/images/icons/x.svg" alt="">
+                    </div>
+                  </div>
+                  <button id="addNumberBtn"
+                          class="btn btn-outlined py-4 px-[31px] border-[#2B292C] text-[#6E6E6E] mt-6 lg-md:mt-[26px]">
                     Добавить телефон
                   </button>
                 </div>

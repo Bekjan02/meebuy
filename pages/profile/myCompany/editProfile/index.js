@@ -89,7 +89,7 @@ function createTree(treeArray, depth = 0) {
           selectedItems.splice(index, 1);
           span.classList.remove("active");
         }
-        updateSelectedItemsDisplay()
+        updateSelectedItemsDisplay();
       }
     });
 
@@ -125,6 +125,25 @@ function createTree(treeArray, depth = 0) {
 
 document.getElementById("treeWrapper").appendChild(createTree(treeArray));
 
+const addNumberBtn = document.getElementById("addNumberBtn");
+const numbersWrapper = document.querySelector(".numberInputs");
+
+addNumberBtn.addEventListener("click", () => {
+  numbersWrapper.insertAdjacentHTML("beforeend", `
+    <div class="flex justify-between items-center pr-7 relative">
+      <input class="numbers" type="tel" name="phoneNumber" placeholder="Например: наушники оптом">
+      <img class="deletePhoneInput absolute top-[60%] right-0 -translate-y-1/2 cursor-pointer" src="/assets/images/icons/x.svg" alt="">
+    </div>
+  `);
+});
+
+numbersWrapper.addEventListener("click", (event) => {
+  if (event.target.classList.contains("deletePhoneInput")) {
+    event.target.parentElement.remove();
+  }
+});
+
+
 const form = document.getElementById("form");
 
 form.addEventListener("submit", function(e) {
@@ -139,3 +158,4 @@ form.addEventListener("submit", function(e) {
   console.log("Name:", name);
   console.log("Description:", description);
 });
+

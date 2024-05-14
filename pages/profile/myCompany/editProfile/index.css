@@ -22,12 +22,14 @@
     margin-top: 20px;
 }
 
-.edit__profile input[type="text"] {
+.edit__profile input[type="text"],
+.edit__profile input[type="tel"] {
     margin-top: 24px;
 }
 
 @media (min-width: 992px) {
-    .edit__profile input[type="text"] {
+    .edit__profile input[type="text"],
+    .edit__profile input[type="tel"] {
         margin-top: 26px;
     }
 }
