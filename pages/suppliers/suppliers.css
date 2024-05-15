@@ -12,7 +12,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  animation: revealContent 1s;
+  animation: revealContent 1.6s;
   border-radius: 20px;
   margin: auto;
 }
