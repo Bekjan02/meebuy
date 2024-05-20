@@ -857,19 +857,15 @@
                         формате XLSX (меню «Сохранить как...» в Excel).
                       </p>
                       <div>
-                        <label
-                          class="flex items-center gap-4 mt-3 md:p-8 p-5 border-2 border-[#BEBEBE] border-dashed rounded-[10px]"
-                          for="file"
-                        >
-                          <img
-                            class="md: w-[27px] md: h-[26px]"
-                            src="../../../assets/images/icons/xsl.svg"
-                            alt=""
-                          />
-                          Нажмите, чтобы загрузить файл или перетащите файл в
-                          эту область
-                        </label>
-                        <input id="file" style="display: none" type="file" />
+                        <div>
+                          <label class="file-label" for="file">
+                            <span id="file-label-text"
+                              >Нажмите, чтобы загрузить файл или перетащите файл
+                              в эту область</span
+                            >
+                          </label>
+                          <input id="file" style="display: none" type="file" />
+                        </div>
                       </div>
                     </div>
                     <div class="flex flex-col gap-8">
@@ -1013,21 +1009,23 @@
           >
             <div class="flex flex-col gap-5">
               <div class="flex items-center gap-4">
-                <svg
-                  width="10"
-                  height="17"
-                  viewBox="0 0 10 17"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.5 1.5L1.5 8.5L8.5 15.5"
-                    stroke="#2B292C"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <a href="/pages/profile/goods/index.html"
+                  ><svg
+                    width="10"
+                    height="17"
+                    viewBox="0 0 10 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5 1.5L1.5 8.5L8.5 15.5"
+                      stroke="#2B292C"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
 
                 <p
                   class="text-[#2B292C] md:text-[18px] text-[16px] font-semibold font-mulish"
