@@ -89,7 +89,6 @@ fileInputs.forEach((input, index) => {
   input.addEventListener("change", () => {
     const file = input.files[0];
     if (file) {
-      console.log(input.id.substring(4));
       const reader = new FileReader();
       reader.onload = function (event) {
         handleFileLoad(event, index);
@@ -97,4 +96,16 @@ fileInputs.forEach((input, index) => {
       reader.readAsDataURL(file);
     }
   });
+});
+
+// upload xsl file in excel blo
+document.getElementById("file").addEventListener("change", function (event) {
+  const fileLabelText = document.getElementById("file-label-text");
+  const files = event.target.files;
+  if (files.length > 0) {
+    fileLabelText.textContent = `Selected file: ${files[0].name}`;
+  } else {
+    fileLabelText.textContent =
+      "Нажмите, чтобы загрузить файл или перетащите файл в эту область";
+  }
 });
