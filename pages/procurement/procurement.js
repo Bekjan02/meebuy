@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // filter
 const filterContainer = document.getElementById("filterContainer");
-const closeFilterContainer = document.getElementById("close-filter-container");
+// const closeFilterContainer = document.getElementById("close-filter-container");
 const toggleFilter = document.getElementById("toggleFilter");
 const openFilter = document.getElementById("openFilter");
 
@@ -169,7 +169,7 @@ const toggleCloseFilterModal = () => {
 };
 
 filterContainer.addEventListener("click", toggleFilterModal);
-closeFilterContainer.addEventListener("click", toggleCloseFilterModal);
+// closeFilterContainer.addEventListener("click", toggleCloseFilterModal);
 
 document.addEventListener("click", (event) => {
   if (
