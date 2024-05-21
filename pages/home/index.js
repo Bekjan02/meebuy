@@ -46,7 +46,7 @@ const itemsToSearch = [
   { label: "товары", color: "rgba(228, 219, 0, 1)" },
   { label: "покупателей", color: "rgba(254, 67, 145, 1)" },
   { label: "поставщиков", color: "rgba(122, 89, 255, 1)" },
-  { label: "производителей", color: "rgba(0, 192, 181, 1)" }
+  { label: "производителей", color: "rgba(0, 192, 181, 1)" },
 ];
 
 const heroFormToggle = () => {
@@ -94,29 +94,29 @@ changingTextElement.style.animation = "text-in 500ms ease-out";
 const recommendedSlider = new Swiper(".recommended__slider", {
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     992: {
       slidesPerView: 2,
-      spaceBetween: 30
-    }
-  }
+      spaceBetween: 30,
+    },
+  },
 });
 
 const newSlide = new Swiper(".new__slider", {
   navigation: {
     nextEl: ".swiper-button-next-new",
-    prevEl: ".swiper-button-prev-new"
+    prevEl: ".swiper-button-prev-new",
   },
   slidesPerView: 2,
   spaceBetween: 30,
   breakpoints: {
     992: {
       slidesPerView: 3,
-      spaceBetween: 16
-    }
-  }
+      spaceBetween: 16,
+    },
+  },
 });
 
 // heart
@@ -127,27 +127,30 @@ const toggleActive = () => {
 
 heart.addEventListener("click", toggleActive);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
-      // Удаляем анимацию выхода, если она есть
-      entry.target.classList.remove("animate__fadeOutDown");
-      // Добавляем анимацию входа с задержкой
-      entry.target.style.animationDelay = `${index * 0.3}s`; // Задержка увеличивается на 0.5s с каждым следующим элементом
-      entry.target.classList.add("animate__animated", "animate__fadeInUp");
-      observer.unobserve(entry.target); // Отключаем наблюдение после начала анимации
-    } else {
-      // Убираем задержку для анимации выхода
-      entry.target.style.animationDelay = "0s";
-      // Добавляем анимацию выхода
-      entry.target.classList.remove("animate__fadeInUp");
-      entry.target.classList.add("animate__animated", "animate__fadeOutDown");
-    }
-  });
-}, {
-  threshold: [0, 0.25, 0.5, 0.75, 1]
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Удаляем анимацию выхода, если она есть
+        entry.target.classList.remove("animate__fadeOutDown");
+        // Добавляем анимацию входа с задержкой
+        entry.target.style.animationDelay = `${index * 0.3}s`; // Задержка увеличивается на 0.5s с каждым следующим элементом
+        entry.target.classList.add("animate__animated", "animate__fadeInUp");
+        observer.unobserve(entry.target); // Отключаем наблюдение после начала анимации
+      } else {
+        // Убираем задержку для анимации выхода
+        entry.target.style.animationDelay = "0s";
+        // Добавляем анимацию выхода
+        entry.target.classList.remove("animate__fadeInUp");
+        entry.target.classList.add("animate__animated", "animate__fadeOutDown");
+      }
+    });
+  },
+  {
+    threshold: [0, 0.25, 0.5, 0.75, 1],
+  }
+);
 
-document.querySelectorAll(".activities").forEach(element => {
+document.querySelectorAll(".activities").forEach((element) => {
   observer.observe(element);
 });
