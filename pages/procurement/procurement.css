@@ -178,7 +178,7 @@
   padding: 0;
   margin: 0;
 }
-.heart:hover .red {
+.heart-active-color {
   fill: red;
   transition: fill 0.3s;
 }
@@ -187,7 +187,7 @@
   fill: red;
   transition: fill 0.3s;
 }
-.heart:hover .yellow {
+.border-heart {
   fill: red;
 }
 
@@ -204,4 +204,8 @@
 input[type="checkbox"] {
   accent-color: #bab306 !important;
   color: white !important;
+}
+
+.heart-active-color {
+  color: red;
 }

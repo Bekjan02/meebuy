@@ -77,6 +77,24 @@ toggleCards.forEach((card) => {
   card.addEventListener("click", toggleCardHandler);
 });
 
+// like
+const hearts = document.querySelectorAll("#heart");
+
+const toggleHeartHandler = (event) => {
+  event.stopPropagation();
+  const heart = event.currentTarget;
+  const insideHeart = heart.querySelector("#inside-heart");
+  const borderHeart = heart.querySelector("#border-heart");
+
+  insideHeart.classList.toggle("red");
+  heart.classList.toggle("heart-active-color");
+  borderHeart.classList.toggle("border-heart");
+};
+
+hearts.forEach((heart) => {
+  heart.addEventListener("click", toggleHeartHandler);
+});
+
 const pagination = document.getElementById("pagination");
 const prevPage = document.getElementById("prevPage");
 const nextPage = document.getElementById("nextPage");
