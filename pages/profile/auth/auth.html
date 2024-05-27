@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auth</title>
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="../home/index.css" />
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../home/index.css" />
     <link rel="stylesheet" href="./auth.css" />
   </head>
   <body>
@@ -17,12 +17,12 @@
             class="container flex justify-between lg-md:items-center lg-md:gap-[27px]"
           >
             <a href="/pages/home/home.html"
-              ><img src="../../assets/images/icons/logo.svg" alt="Meebuy"
+              ><img src="../../../assets/images/icons/logo.svg" alt="Meebuy"
             /></a>
             <img
               class="lg-md:hidden"
               id="burgerIcon"
-              src="../../assets/images/icons/burger-menu.svg"
+              src="../../../assets/images/icons/burger-menu.svg"
               alt="Burger Menu"
             />
             <form
@@ -31,7 +31,7 @@
               <div class="relative">
                 <div class="absolute inset-y-0 end-0 flex items-center pe-2">
                   <img
-                    src="../../assets/images/icons/search.svg"
+                    src="../../../assets/images/icons/search.svg"
                     alt="Search icon"
                   />
                 </div>
@@ -77,7 +77,7 @@
 
               <img
                 class="lg-md:block"
-                src="../../assets/images/icons/bell.svg"
+                src="../../../assets/images/icons/bell.svg"
                 alt=""
               />
             </div>
@@ -93,7 +93,7 @@
               <div class="absolute inset-y-0 start-0 flex items-center ps-3">
                 <img
                   id="searchIconImg"
-                  src="../../assets/images/icons/search.svg"
+                  src="../../../assets/images/icons/search.svg"
                   alt="Search icon"
                 />
               </div>
@@ -132,7 +132,7 @@
         <!-- close icon -->
         <img
           class="absolute top-[18px] right-5"
-          src="../../assets/images/icons/close.svg"
+          src="../../../assets/images/icons/close.svg"
           alt="Close"
           id="closeIcon"
         />
@@ -194,7 +194,7 @@
               </div>
             </div>
           </div>
-          <img src="../../assets/images/icons/meebuy.svg" alt="Meebuy" />
+          <img src="../../../assets/images/icons/meebuy.svg" alt="Meebuy" />
         </div>
       </div>
     </header>
@@ -203,8 +203,8 @@
     <div class="suppliers-animation-container">
       <div class="menu">
         <div class="container flex gap-4 py-4">
-          <img src="../../assets/images/icons/home.svg" alt="home" />
-          <img src="../../assets/images/icons/arrow-prev.svg" alt="" />
+          <img src="../../../assets/images/icons/home.svg" alt="home" />
+          <img src="../../../assets/images/icons/arrow-prev.svg" alt="" />
           <p class="font-normal font-mulish text-[#A0A0A0]">Регистрация</p>
         </div>
       </div>
@@ -222,9 +222,10 @@
       </div>
       
      <div class="cards flex lg-md:flex-row flex-col lg-md:justify-center  lg-md:w-[1000px]   rounded-2xl">
-      <div class="lg-md:w-[534px] w-[390px] p-10 mx-auto ">
+      <div class="lg-md:w-[534px] w-[390px] p-8 mx-auto ">
        <!-- register -->
-        <div id="register-form" style="max-height: 0px; display: flex; flex-direction: column; gap: 24px; z-index: 0; position: relative" class="overflow-hidden w-full mb-6 ">
+        <div id="register-form" style="display: flex; flex-direction: column; gap: 15px; z-index: 0; position: relative" class="overflow-hidden w-full mb-6 ">
+        <form class="flex flex-col gap-5">
           <div class="flex flex-col gap-3  w-full">
             <label clas="text-[18px] font-mulish" for=""
               >Ваш адрес электронной почты Email *</label
@@ -263,7 +264,7 @@
                 <img
                   class="show-password w-[24px] h-[24px]"
                   style="display: block"
-                  src="../../assets/images/icons/password-close.svg"
+                  src="../../../assets/images/icons/password-close.svg"
                   alt=""
                 />
               </div>
@@ -279,7 +280,7 @@
                 <img
                   class="show-password w-[24px] h-[24px]"
                   style="display: block"
-                  src="../../assets/images/icons/password-close.svg"
+                  src="../../../assets/images/icons/password-close.svg"
                   alt=""
                 />
               </div>
@@ -296,116 +297,118 @@
           </div>
           <button
             id="register"
-            class="text-[16px] font-medium font-mulish py-4 border border-[#2B292C] rounded-lg uppercase"
+            class="text-[16px] font-medium font-mulish py-3 border border-[#2B292C] rounded-lg uppercase"
           >
             зарегистрироваться
           </button>
+        </form>
           <div class="flex flex-col items-center gap-5">
             <p class="font-normal font-mulish">Или Вы можете войти через сервисы</p>
               <ul class="flex items-center gap-5 w-[323px]">
                 <li class="cards rounded-[12px] p-2">
                   <a href=""
                     ><img
-                      src="../../assets/images/icons/google.svg"
+                      src="../../../assets/images/icons/google.svg"
                       alt="google"
                   /></a>
                 </li>
                 <li class="cards rounded-[12px] py-2 px-3">
                   <a href=""
                     ><img
-                      src="../../assets/images/icons/yandex.svg"
+                      src="../../../assets/images/icons/yandex.svg"
                       alt="yandex"
                   /></a>
                 </li>
                 <li class="cards rounded-[12px] p-2"
                   <a href=""
-                    ><img src="../../assets/images/icons/gamil.svg" alt="gamil"
+                    ><img src="../../../assets/images/icons/gamil.svg" alt="gamil"
                   /></a>
                 </li>
                 <li class="cards rounded-[12px] py-2 px-[14px]"
                   <a href=""
                     ><img
-                      src="../../assets/images/icons/facebook.svg"
+                      src="../../../assets/images/icons/facebook.svg"
                       alt="facebook"
                   /></a>
                 </li>
                 <li class="cards rounded-[12px] px-2 py-[14px]"
                   <a href=""
-                    ><img src="../../assets/images/icons/vw.svg" alt="vw"
+                    ><img src="../../../assets/images/icons/vw.svg" alt="vw"
                   /></a>
                 </li>
               </ul>
           </div>
         </div>
         <!-- login -->
-        <div id="login-form" style="display: flex; flex-direction: column; gap: 30px" class=" login-form overflow-hidden w-full mb-6 ">
-          <div class="flex flex-col gap-3  w-full">
-            <label clas="text-[18px] font-mulish" for=""
-              >Ваш адрес электронной почты Email *</label
-            >
-            <input
-              type="email"
-              placeholder="Email * "
-              class="border border-[#E6E6E6] w-[100%] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
-            />
-          </div>
-          <div id="passwordLog" class="flex flex-col gap-3 relative">
-            <label for="">Ваш пароль*</label>
-            <input
-              type="password"
-              placeholder="********"
-              class="password-input border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
-            />
-          <div class="absolute right-3 top-12">
-            <img
-              class="show-password w-[24px] h-[24px]"
-              style="display: block"
-              src="../../assets/images/icons/password-close.svg"
-              alt=""
-            />
-          </div>
-          <p class="flex justify-end text-[#0035FF] text-[18px] font-mulish font-normal">
-            Забыли пароль?
-          </p>
+        <div id="login-form" style="display: flex; flex-direction: column; gap: 15px" class=" login-form overflow-hidden w-full mb-6 ">
+      <form class="flex flex-col gap-4">
+        <div class="flex flex-col gap-3  w-full">
+          <label clas="text-[18px] font-mulish" for=""
+            >Ваш адрес электронной почты Email *</label
+          >
+          <input
+            type="email"
+            placeholder="Email * "
+            class="border border-[#E6E6E6] w-[100%] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
+          />
         </div>
-        <button
-         id="login"
-          class="text-[16px] font-medium font-mulish py-4 border border-[#2B292C] rounded-lg uppercase"
-        >
-        войти в личный кабинет
-        </button>
+        <div id="passwordLog" class="flex flex-col gap-3 relative">
+          <label for="">Ваш пароль*</label>
+          <input
+            type="password"
+            placeholder="********"
+            class="password-input border border-[#E6E6E6] bg-[#F9F9F9] rounded-2xl px-5 py-3 text-[#737373]"
+          />
+        <div class="absolute right-3 top-12">
+          <img
+            class="show-password w-[24px] h-[24px]"
+            style="display: block"
+            src="../../../assets/images/icons/password-close.svg"
+            alt=""
+          />
+        </div>
+        <p class="flex justify-end text-[#0035FF] text-[18px] font-mulish font-normal">
+          Забыли пароль?
+        </p>
+      </div>
+      <button
+       id="login"
+        class="text-[16px] font-medium font-mulish py-4 border border-[#2B292C] rounded-lg uppercase"
+      >
+      войти в личный кабинет
+      </button>
+      </form>
         <div class="flex flex-col items-center gap-5">
           <p class="font-normal font-mulish">Или Вы можете войти через сервисы</p>
             <ul class="flex items-center gap-5 w-[323px]">
               <li class="cards rounded-[12px] p-2">
-                <a href=""
-                  ><img
-                    src="../../assets/images/icons/google.svg"
+                <a href=""  ><img
+                    src="../../../assets/images/icons/google.svg"
                     alt="google"
                 /></a>
               </li>
               <li class="cards rounded-[12px] py-2 px-3">
                 <a href=""
                   ><img
-                    src="../../assets/images/icons/yandex.svg"
+                    src="../../../assets/images/icons/yandex.svg"
                     alt="yandex"
                 /></a>
               </li>
               <li class="cards rounded-[12px] p-2"
                 <a href=""
-                  ><img src="../../assets/images/icons/gamil.svg" alt="gamil"
+                  ><img src="../../../assets/images/icons/gamil.svg" alt="gamil"
                 /></a>
               </li>
               <li class="cards rounded-[12px] py-2 px-[14px]"
                 <a href=""
                   ><img
-                    src="../../assets/images/icons/facebook.svg"
+                    src="../../../assets/images/icons/facebook.svg"
                     alt="facebook"
                 /></a>
               </li>
               <li class="cards rounded-[12px] px-2 py-[14px]"
                 <a href=""
-                  ><img src="../../assets/images/icons/vw.svg" alt="vw"
+                  ><img src="../../../assets/images/icons/vw.svg" alt="vw"
                 /></a>
               </li>
             </ul>
@@ -413,7 +416,7 @@
         </div>
       </div>
      
-      <img id="login-img" style="display: block;" class="login-img transition-all duration-500 ease-linear object-cover lg-md:rounded-r-2xl w-[466px]" src="../../assets/images/auth/auth-bg.jpeg" />
+      <img id="login-img" style="display: block;" class="login-img transition-all duration-500 ease-linear object-cover lg-md:rounded-r-2xl w-[466px]" src="../../../assets/images/auth/auth-bg.jpeg" />
      </div>
     </div>
 
