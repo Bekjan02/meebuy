@@ -62,10 +62,6 @@ newSelectList.addEventListener("click", () => {
 selectContainer.addEventListener("click", toggleSelectModal);
 
 let heartIcons = document.querySelectorAll(".heart__icon");
-// category sidebar
-const categoryCloseIcon = document.querySelector("#categoryCloseIcon");
-const categoryMenu = document.querySelector("#categoryMenu");
-const categoryBtn = document.querySelector("#categoryBtn");
 
 // burger menu
 const burgerMenu = document.querySelector("#burgerMenu");
@@ -96,21 +92,6 @@ function enableScroll() {
   document.documentElement.style.overflow = ""; // Возвращаем стандартное поведение
 }
 
-const toggleCategoryMenu = () => {
-  if (categoryMenu.classList.contains("-translate-x-full")) {
-    categoryMenu.classList.remove("-translate-x-full");
-    categoryMenu.classList.add("translate-x-0");
-    disableScroll();
-  } else {
-    categoryMenu.classList.add("-translate-x-full");
-    categoryMenu.classList.remove("translate-x-0");
-    enableScroll();
-  }
-};
-
-categoryBtn.addEventListener("click", toggleCategoryMenu);
-categoryCloseIcon.addEventListener("click", toggleCategoryMenu);
-
 const toggleMenu = () => {
   if (burgerMenu.classList.contains("translate-x-0")) {
     burgerMenu.classList.remove("translate-x-0");
@@ -130,6 +111,7 @@ const filterContainer = document.getElementById("filterContainer");
 const closeFilterContainer = document.getElementById("close-filter-container");
 const toggleFilter = document.getElementById("toggleFilter");
 const openFilter = document.getElementById("openFilter");
+const filterBtn = document.getElementById("filterBtn");
 
 const toggleFilterModal = () => {
   openFilter.style.display =
@@ -138,6 +120,17 @@ const toggleFilterModal = () => {
 const toggleCloseFilterModal = () => {
   openFilter.style.display = "none";
 };
+
+filterBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  toggleCloseFilterModal();
+})
+
+openFilter.addEventListener('click', (e) => {
+  if (e.target == e.currentTarget) {
+    toggleCloseFilterModal();
+  }
+})
 
 filterContainer.addEventListener("click", toggleFilterModal);
 closeFilterContainer.addEventListener("click", toggleCloseFilterModal);
