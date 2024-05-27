@@ -109,3 +109,31 @@ document.getElementById("file").addEventListener("change", function (event) {
       "Нажмите, чтобы загрузить файл или перетащите файл в эту область";
   }
 });
+
+// add column
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  event.preventDefault();
+  const addButton = document.getElementById("column-button");
+  const columnContainer = document.getElementById("column-container");
+
+  function createNewColumn(event) {
+    event.preventDefault();
+    const newColumn = columnContainer.firstElementChild.cloneNode(true);
+    columnContainer.appendChild(newColumn);
+  }
+  addButton.addEventListener("click", createNewColumn);
+});
+
+// delete
+const columnContainer = document.getElementById("column-container");
+
+columnContainer.addEventListener("click", function (event) {
+  if (event.target.classList.contains("delete-button")) {
+    const column = event.target.closest(".column");
+
+    if (column !== columnContainer.querySelector(".column")) {
+      column.remove();
+    }
+  }
+});
