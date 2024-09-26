@@ -57,7 +57,7 @@
       </div>
       <!-- bot header with search and profile -->
       <div class="container flex justify-between py-3 lg-md:hidden">
-        <form id="searchForm" class="w-min transition-transform duration-300 ease-in-out">
+        <form id="searchForm" class="w-[50px] transition-all duration-[1500ms] ease-out">
           <div class="relative">
             <div class="absolute inset-y-0 start-0 flex items-center ps-3">
               <img id="searchIconImg" src="../../assets/images/icons/search.svg" alt="Search icon" />
@@ -78,15 +78,15 @@
     </div>
     <!-- burger menu -->
     <div
-      class="burgerMenu h-screen bg-dark fixed bottom-0 right-0 w-screen shadow-lg transition-transform duration-300 ease-in-out z-50 lg-md:hidden px-5 translate-x-full"
+      class="burgerMenu overflow-auto h-fit bg-dark fixed bottom-0 right-0 w-screen shadow-lg transition-transform duration-300 ease-in-out z-50 lg-md:hidden px-5 translate-x-full"
       id="burgerMenu">
       <!-- close icon -->
-      <img class="absolute top-[18px] right-5" src="../../assets/images/icons/close.svg" alt="Close" id="closeIcon" />
-      <div class="flex flex-col justify-center h-full">
-        <div class="text-white flex flex-col gap-[30px]">
+      <img class="top-[45px] absolute top-[18px] right-5" src="../../assets/images/icons/close.svg" alt="Close" id="closeIcon" />
+      <div class="flex flex-col justify-center h-dvh">
+        <div class="lg-md:w-auto text-white flex flex-col gap-[30px]">
           <ul class="flex flex-col justify-center items-center h-full gap-10">
             <li class="text-base font-medium uppercase">
-              <a href="/pages/suppliers/suppliers.html"> Поставщики </a>
+              <a href="/pages/suppliers/suppliers.html"> Поставщики123 </a>
             </li>
             <li class="text-base font-medium uppercase">
               <a> Закупки </a>
@@ -181,10 +181,12 @@
       <div class="container">
         <div>
           <h2 class="text-center text-lg font-black uppercase md:text-2xl xl:text-3xl">Категории товаров</h2>
-          <ul class="grid grid-cols-1 gap-9 text-base mt-5 md:grid-cols-2 lg-md:gap-[30px] lg-md:grid-cols-3 xl:text-lg">
+          <ul
+            class="grid grid-cols-1 gap-9 text-base mt-5 md:grid-cols-2 lg-md:gap-[30px] lg-md:grid-cols-3 xl:text-lg">
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/t-shirt.svg" alt="">
                 </div>
                 <span>Одежда, обувь и аксессуары</span>
@@ -192,7 +194,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/burger.svg" alt="Shirt">
                 </div>
                 <span>Продукты питания и напитки</span>
@@ -200,7 +203,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/robot.svg" alt="Shirt">
                 </div>
                 <span>Игрушки и товары для детей</span>
@@ -208,7 +212,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/house.svg" alt="Shirt">
                 </div>
                 <span>Дом,дача,сад</span>
@@ -216,7 +221,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/gift.svg" alt="Shirt">
                 </div>
                 <span>Подарки и сувениры</span>
@@ -224,7 +230,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/computer.svg" alt="Shirt">
                 </div>
                 <span>Электроника и бытовая техника</span>
@@ -232,7 +239,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/bed.svg" alt="Shirt">
                 </div>
                 <span>Мебель</span>
@@ -240,7 +248,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/makeup.svg" alt="Shirt">
                 </div>
                 <span>Косметика и гигиена</span>
@@ -248,7 +257,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/happy-car.svg" alt="Shirt">
                 </div>
                 <span>Авто и мото</span>
@@ -256,7 +266,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/first-aid.svg" alt="Shirt">
                 </div>
                 <span>Медицина и товары для здоровья</span>
@@ -264,7 +275,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/football.svg" alt="Shirt">
                 </div>
                 <span>Спорт, охота и туризм</span>
@@ -272,7 +284,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/animal.svg" alt="Shirt">
                 </div>
                 <span>Животные и растения</span>
@@ -280,7 +293,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/books.svg" alt="Shirt">
                 </div>
                 <span>Книги и канцелярские товары</span>
@@ -288,7 +302,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/guitar.svg" alt="Shirt">
                 </div>
                 <span>Музыка и искусство</span>
@@ -296,7 +311,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/wrench.svg" alt="Shirt">
                 </div>
                 <span>Строительство и ремонт</span>
@@ -304,7 +320,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/services.svg" alt="Shirt">
                 </div>
                 <span>Услуги</span>
@@ -312,7 +329,8 @@
             </li>
             <li class="">
               <a class="flex items-center gap-[10px] w-fit" href="">
-                <div class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
+                <div
+                  class="shadow-category-black text-white w-9 h-9 rounded-full overflow-hidden flex items-center justify-center lg-md:w-12 lg-md:h-12">
                   <img src="../../assets/images/icons/category/other.svg" alt="Shirt">
                 </div>
                 <span>Другое</span>
@@ -501,7 +519,7 @@
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
               <img src="../../assets/images/icons/premium.svg" alt="">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -546,7 +564,7 @@
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
               <img src="../../assets/images/icons/premium.svg" alt="">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -589,7 +607,7 @@
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
               <img src="../../assets/images/icons/premium.svg" alt="">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -632,7 +650,7 @@
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
               <img src="../../assets/images/icons/premium.svg" alt="">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -682,7 +700,7 @@
           <div class="card relative p-4 rounded-[15px] lg-md:flex lg-md:flex-col">
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -714,7 +732,7 @@
           <div class="card relative p-4 rounded-[15px] lg-md:flex lg-md:flex-col">
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -746,7 +764,7 @@
           <div class="card relative p-4 rounded-[15px] lg-md:flex lg-md:flex-col">
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -778,7 +796,7 @@
           <div class="card relative p-4 rounded-[15px] lg-md:flex lg-md:flex-col">
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -810,7 +828,7 @@
           <div class="card relative p-4 rounded-[15px] lg-md:flex lg-md:flex-col">
             <!-- card icons -->
             <div class="absolute right-4 top-4 flex items-center gap-1.5">
-              <svg class="transition-colors" id="heart" width="36" height="36" viewBox="0 0 36 36" fill="none"
+              <svg class="transition-colors heart cursor-pointer" width="36" height="36" viewBox="0 0 36 36" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="18" fill="#2B292C" />
                 <path
@@ -937,92 +955,74 @@
       </div>
     </div>
   </footer>
- <!-- mobile menu -->
- <div style="border-radius: 15px 15px 0 0;" class="sm:hidden flex justify-between items-center bg-[#FFFFFF] rounded-tr-2xl rounded-tl-2xl px-5 pb-3 pt-5 sticky z-50 bottom-0 w-full">
-  <a  id="menu-home" class="menu-tab flex flex-col gap-[10px] items-center" href="/pages/home/home.html">
-    <img
-      id="home-none-active"
-      style="display: block;"
-      class="none-active-icon w-6 h-6"
-      src="/assets/images/icons/menu-mobile/home.svg"
-      alt=""
-    />
-    <div id="home-active" class="active-icon" style="display: none;">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
-          fill="#2B292C"
-          stroke="#2B292C"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M9 23V12H15V23"
-          stroke="#FFFFFC"
-          stroke-width="2"
-          stroke-linejoin="round"
-        />
-      </svg>
-    </div>
-    <span class="text-[#4D4D4D] text-[12px] font-mulish">Главная</span>
-  </a>
-  <a id="menu-messages" class="menu-tab flex flex-col gap-[10px] items-center" href="/pages/profile/messages/chat/index.html">
-    <img
-      id="messages-none-active"
-      class="none-active-icon w-6 h-6"
-      src="/assets/images/icons/menu-mobile/message.svg"
-      alt=""
-    />
-    <div id="messages-active" class="active-icon" style="display: none;">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- mobile menu -->
+  <div style="border-radius: 15px 15px 0 0;"
+    class="sm:hidden flex justify-between items-center bg-[#FFFFFF] rounded-tr-2xl rounded-tl-2xl px-5 pb-3 pt-5 sticky z-50 bottom-0 w-full">
+    <a id="menu-home" class="menu-tab flex flex-col gap-[10px] items-center" href="/pages/home/home.html">
+      <img id="home-none-active" style="display: block;" class="none-active-icon w-6 h-6"
+        src="/assets/images/icons/menu-mobile/home.svg" alt="" />
+      <div id="home-active" class="active-icon" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+            fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9 23V12H15V23" stroke="#FFFFFC" stroke-width="2" stroke-linejoin="round" />
         </svg>
-        
-    </div>
-    <span class="text-[#4D4D4D] text-[12px] font-mulish">Сообщения</span>
-  </a>
-  <a id="menu-procurement" class="menu-tab flex flex-col gap-[10px] items-center" href="/pages/procurement/procurement.html">
-    <img
-    id="procurement-none-active"
-    class="none-active-icon w-6 h-6"  
-      src="/assets/images/icons/menu-mobile/precurement.svg"
-      alt=""
-    />
-    <div id="procurement-active" class="active-icon" style="display: none;">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 16.0019V8.00186C20.9996 7.65113 20.9071 7.30667 20.7315 7.00302C20.556 6.69937 20.3037 6.44722 20 6.27186L13 2.27186C12.696 2.09632 12.3511 2.00391 12 2.00391C11.6489 2.00391 11.304 2.09632 11 2.27186L4 6.27186C3.69626 6.44722 3.44398 6.69937 3.26846 7.00302C3.09294 7.30667 3.00036 7.65113 3 8.00186V16.0019C3.00036 16.3526 3.09294 16.697 3.26846 17.0007C3.44398 17.3043 3.69626 17.5565 4 17.7319L11 21.7319C11.304 21.9074 11.6489 21.9998 12 21.9998C12.3511 21.9998 12.696 21.9074 13 21.7319L20 17.7319C20.3037 17.5565 20.556 17.3043 20.7315 17.0007C20.9071 16.697 20.9996 16.3526 21 16.0019Z" fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M3.26953 6.96094L11.9995 12.0109L20.7295 6.96094" stroke="#FFFFFC" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-        <path d="M12 22.08V12" stroke="#FFFFFC" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+      </div>
+      <span class="text-[#4D4D4D] text-[12px] font-mulish">Главная</span>
+    </a>
+    <a id="menu-messages" class="menu-tab flex flex-col gap-[10px] items-center"
+      href="/pages/profile/messages/chat/index.html">
+      <img id="messages-none-active" class="none-active-icon w-6 h-6" src="/assets/images/icons/menu-mobile/message.svg"
+        alt="" />
+      <div id="messages-active" class="active-icon" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z"
+            fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
-        
-    </div>
-    <span class="text-[#4D4D4D] text-[12px] font-mulish">Закупки</span>
-  </a>
-  <a id="menu-profile" class="menu-tab flex flex-col gap-[10px] items-center" href="/pages/profile/myCompany/index.html">
-    <img
-     id="profile-none-active"
-     class="none-active-icon w-6 h-6"
-      src="/assets/images/icons/menu-mobile/profile.svg"
-      alt=""
-    />
-    <div id="profile-active" class="active-icon" style="display: none;">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" fill="#2B292C"/>
-        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21H20Z" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+      </div>
+      <span class="text-[#4D4D4D] text-[12px] font-mulish">Сообщения</span>
+    </a>
+    <a id="menu-procurement" class="menu-tab flex flex-col gap-[10px] items-center"
+      href="/pages/procurement/procurement.html">
+      <img id="procurement-none-active" class="none-active-icon w-6 h-6"
+        src="/assets/images/icons/menu-mobile/precurement.svg" alt="" />
+      <div id="procurement-active" class="active-icon" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 16.0019V8.00186C20.9996 7.65113 20.9071 7.30667 20.7315 7.00302C20.556 6.69937 20.3037 6.44722 20 6.27186L13 2.27186C12.696 2.09632 12.3511 2.00391 12 2.00391C11.6489 2.00391 11.304 2.09632 11 2.27186L4 6.27186C3.69626 6.44722 3.44398 6.69937 3.26846 7.00302C3.09294 7.30667 3.00036 7.65113 3 8.00186V16.0019C3.00036 16.3526 3.09294 16.697 3.26846 17.0007C3.44398 17.3043 3.69626 17.5565 4 17.7319L11 21.7319C11.304 21.9074 11.6489 21.9998 12 21.9998C12.3511 21.9998 12.696 21.9074 13 21.7319L20 17.7319C20.3037 17.5565 20.556 17.3043 20.7315 17.0007C20.9071 16.697 20.9996 16.3526 21 16.0019Z"
+            fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M3.26953 6.96094L11.9995 12.0109L20.7295 6.96094" stroke="#FFFFFC" stroke-width="2"
+            stroke-linecap="square" stroke-linejoin="round" />
+          <path d="M12 22.08V12" stroke="#FFFFFC" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
         </svg>
-        
-    </div>
-    <span class="text-[#4D4D4D] text-[12px] font-mulish">Профиль</span>
-  </a>
-</div>
+
+      </div>
+      <span class="text-[#4D4D4D] text-[12px] font-mulish">Закупки</span>
+    </a>
+    <a id="menu-profile" class="menu-tab flex flex-col gap-[10px] items-center"
+      href="/pages/profile/myCompany/index.html">
+      <img id="profile-none-active" class="none-active-icon w-6 h-6" src="/assets/images/icons/menu-mobile/profile.svg"
+        alt="" />
+      <div id="profile-active" class="active-icon" style="display: none;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+            fill="#2B292C" />
+          <path
+            d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21H20Z"
+            stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+            fill="#2B292C" stroke="#2B292C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </div>
+      <span class="text-[#4D4D4D] text-[12px] font-mulish">Профиль</span>
+    </a>
+  </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

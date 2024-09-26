@@ -81,7 +81,7 @@ function createTree(treeArray, depth = 0) {
 
     span.addEventListener("click", () => {
       if (!item.children || item.children.length === 0) {
-        const index = selectedItems.indexOf(item.name);
+        const index = selectedItems.indexOf(item.id);
         if (index === -1) {
           selectedItems.push(item.name);
           span.classList.add("active");
