@@ -1,0 +1,8 @@
+input[type="checkbox"] {
+  accent-color: #bab306 !important;
+  color: white !important;
+}
+input[type="radio"] {
+  accent-color: #000 !important;
+  color: white !important;
+}
